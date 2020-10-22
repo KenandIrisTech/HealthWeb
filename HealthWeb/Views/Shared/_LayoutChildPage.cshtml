@@ -1,0 +1,56 @@
+﻿@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Navigations;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    @*<meta name="viewport" content="width=device-width, initial-scale=1.0">*@
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>@ViewBag.Title - Intelligent Life </title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+
+    <div class="row" style="width:100vw;height:100vh;">
+        <div class="col-sm-12">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-8">
+                <div>@RenderBody()</div>
+            </div>
+        </div>
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/syncfusion")
+    @Html.EJS().ScriptManager()
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+
+
+    </script>
+
+    <style type="text/css">
+        .nav-container {
+            flex-direction: row;
+        }
+
+        .nav-left-content, .nav-middle-content, .nav-right-content {
+            color: #000;
+            cursor: pointer;
+        }
+
+        .row {
+            margin: 0;
+        }
+    </style>
+</body>
+</html>
+
+@* viewpoint setting *@
+@* https://medium.com/frochu/html-meta-viewport-setting-69fbb06ed3d8 *@

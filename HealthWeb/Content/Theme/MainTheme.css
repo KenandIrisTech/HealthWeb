@@ -1,0 +1,20 @@
+﻿body {
+}
+
+
+.e-menu-wrapper, e-form-header {
+    background-color: #bd1874;
+}
+
+.flex-item.flex-item-header, .flex-item.flex-item-footer {
+    background-color:#eaeaea;
+    color: #bd1874;
+}
+.e-menu-wrapper ul, .e-menu-wrapper ul .e-menu-item .e-menu-icon, 
+.e-menu-wrapper ul .e-menu-item .e-caret {
+    color: #fff;
+}
+
+.e-float-input.e-control-wrapper:not(.e-error) input ~ label.e-label-top.e-float-text {
+    color: #c43a87 !important;
+}

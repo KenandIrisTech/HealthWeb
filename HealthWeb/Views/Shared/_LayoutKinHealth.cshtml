@@ -1,0 +1,119 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Navigations
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - ONE TAIWAN</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <div class="container navi-content">
+        <div class="row row-cols-xl-1" style="background-color:#bd1874">
+            <div class="col-xl-3">
+                @Html.EJS().Menu("menuLeft").Items(m =>
+               {
+                   m.IconCss("ki-icons ki-icon-menu").Text(SystemMenuItem.Menu).Add();
+               }).Orientation(Orientation.Horizontal).Select("menuLeft_select").ShowItemOnClick(true).Render()
+            </div>
+            <div class="col-xl-4"></div>
+            <div class="col-xl-5">
+                @Html.EJS().Menu("menuRight").CssClass("ki-right-menu").Items(m =>
+                {
+
+                    m.IconCss("ki-icons ki-icon-login").Text(SystemMenuItem.Login).Add();
+                    m.IconCss("ki-icons ki-icon-notification").Text(SystemMenuItem.Notification).Add();
+
+                    m.IconCss("ki-icons ki-icon-user-profile").Text("Ken Li").Items(i =>
+                    {
+                        i.IconCss("ki-icons ki-icon-dashboard").Text(SystemMenuItem.Dashboard).Add();
+                        i.IconCss("ki-icons ki-icon-notification").Text(SystemMenuItem.Notification).Add();
+                        i.IconCss("ki-icons ki-icon-user-profile").Text(SystemMenuItem.User_Setting).Add();
+                        i.IconCss("ki-icons ki-icon-logout").Text(SystemMenuItem.Logout).Add();
+
+                    }).Add();
+
+                }).Orientation(Orientation.Horizontal).Render()
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    @Html.EJS().Sidebar("sidebarMenu").Type(SidebarType.Over).Width(200).CloseOnDocumentClick(true).Target("container").ContentTemplate(@<div>
+        @Html.EJS().Menu("menu").Items(menu =>
+   {
+       menu.IconCss("ki-icons ki-icon-data-information").Id("MI-1000").Text(FunctionMenuItem.Data_Master).Items(mi1 =>
+       {
+
+           mi1.IconCss("ki-icons ki-icon-user-profile").Id("MI-1101").Text(FunctionMenuItem.Master_UserProfile).Add();
+           mi1.IconCss("ki-icons ki-icon-user-profile").Id("MI-1102").Text(FunctionMenuItem.Master_UserProfile_External).Add();
+           mi1.IconCss("ki-icons ki-icon-warehouse").Id("MI-1103").Text(FunctionMenuItem.Master_Depots).Url("/Master/Depot").Add();
+           mi1.IconCss("ki-icons ki-icon-container").Id("MI-1104").Text(FunctionMenuItem.Master_ContainerType).Url("/Master/ContainerType").Add();
+           mi1.IconCss("ki-icons ki-icon-location").Id("MI-1105").Text(FunctionMenuItem.Master_Location).Url("/Master/Location").Add();
+           mi1.IconCss("ki-icons ki-icon-dollar-tag").Id("MI-1106").Text(FunctionMenuItem.Master_Tariff).Add();
+
+       }).Add();
+       menu.IconCss("ki-icons ki-icon-registration").Id("MI-2000").Text(FunctionMenuItem.Registration).Items(mi1 =>
+       {
+
+           mi1.IconCss("ki-icons ki-icon-register").Id("MI-2101").Text(FunctionMenuItem.Registration_Request).Add();
+           mi1.IconCss("ki-icons ki-icon-registration-inquery").Id("MI-2102").Text(FunctionMenuItem.Registration_Inquery).Add();
+           mi1.IconCss("ki-icons ki-icon-data-synchornize").Id("MI-2103").Text(FunctionMenuItem.DataSource).Add();
+
+       }).Add();
+       menu.IconCss("ki-icons ki-icon-load-report").Id("MI-3000").Text(FunctionMenuItem.ReportingService).Items(mi1 =>
+       {
+
+           mi1.IconCss("ki-icons ki-icon-new-report").Id("MI-3101").Text(FunctionMenuItem.Report_0001).Add();
+           mi1.IconCss("ki-icons ki-icon-new-report").Id("MI-3102").Text(FunctionMenuItem.Report_0002).Add();
+
+       }).Add();
+   }).Orientation(Orientation.Vertical).CssClass("ki-sidebar-menu").Render()
+    </div>).IsOpen(false).Render()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/syncfusion")
+
+<script type="text/javascript">
+        //loadCultureFiles('zh-tw');
+
+        function menuLeft_select() {
+            sidebarMenuInstance.toggle();
+        }
+</script>
+    @Html.EJS().ScriptManager()
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        var sidebarMenuInstance;
+
+        $(function () {
+            sidebarMenuInstance = document.getElementById('sidebarMenu').ej2_instances[0];
+        });
+
+    </script>
+    <style type="text/css">
+        .ki-icons {
+        }
+
+        .ki-icon-menu:hover {
+            cursor: pointer;
+        }
+
+        .ki-sidebar-menu, .ki-sidebar-menu ul {
+            width: 100%;
+        }
+
+        .ki-right-menu {
+            float: right;
+        }
+    </style>
+</body>
+</html>

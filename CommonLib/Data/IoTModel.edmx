@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="IoTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="M_LOGIN">
+          <Key>
+            <PropertyRef Name="LOGIN_ID" />
+          </Key>
+          <Property Name="LOGIN_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="USER_ID" Type="int" Nullable="false" />
+          <Property Name="MEDIA_ID" Type="int" Nullable="false" />
+          <Property Name="CHANNEL_ID" Type="varchar" MaxLength="30" />
+          <Property Name="USER_UUID" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="DISPLAY_NAME" Type="varchar" MaxLength="50" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="50" />
+          <Property Name="PHOTO" Type="varchar" MaxLength="200" />
+          <Property Name="STATUS_MESSAGE" Type="nvarchar" MaxLength="200" />
+          <Property Name="CREATED_USER_ID" Type="int" Nullable="false" />
+          <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+          <Property Name="UPDATED_ID" Type="int" Nullable="false" />
+          <Property Name="UPDATED_TIME" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="M_MEDIA">
+          <Key>
+            <PropertyRef Name="MEDIA_ID" />
+          </Key>
+          <Property Name="MEDIA_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LCL_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IS_ACTIVE" Type="bit" Nullable="false" />
+          <Property Name="CREATED_USER_ID" Type="int" Nullable="false" />
+          <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+          <Property Name="UPDATED_ID" Type="int" Nullable="false" />
+          <Property Name="UPDATED_TIME" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="M_USER">
+          <Key>
+            <PropertyRef Name="USER_ID" />
+          </Key>
+          <Property Name="USER_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="USER_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="EMAIL_CONFIRMED" Type="bit" Nullable="false" />
+          <Property Name="PASSWORD_HASH" Type="varchar(max)" />
+          <Property Name="SECURITY_STAMP" Type="varchar(max)" />
+          <Property Name="REQUIRED_CHANGE_PASSWORD" Type="bit" />
+          <Property Name="PASSWORD_CHANGED_TIME" Type="datetime" />
+          <Property Name="PHONE_NUMBER" Type="varchar" MaxLength="50" />
+          <Property Name="PHONE_NUMBER_CONFIRMED" Type="bit" Nullable="false" />
+          <Property Name="TWO_FACTOR_ENABLED" Type="bit" Nullable="false" />
+          <Property Name="LOCKOUT_END_TIME" Type="datetime" />
+          <Property Name="LOCKOUT_ENABLED" Type="bit" Nullable="false" />
+          <Property Name="ACCESS_FAILED_COUNT" Type="int" Nullable="false" />
+          <Property Name="IS_ONLINE" Type="bit" Nullable="false" />
+          <Property Name="IS_ACTIVE" Type="bit" Nullable="false" />
+          <Property Name="LANGUAGE" Type="varchar" MaxLength="10" />
+          <Property Name="LAST_LOGIN_TIME" Type="datetime" />
+          <Property Name="LAST_LOGOFF_TIME" Type="datetime" />
+          <Property Name="SESSION_ID" Type="varchar" MaxLength="25" />
+          <Property Name="PASSCODE" Type="varchar" MaxLength="10" />
+          <Property Name="PASSCODE_EXPIRED" Type="datetime" />
+          <Property Name="CHANNEL_ID" Type="varchar" MaxLength="30" />
+          <Property Name="USER_UUID" Type="varchar" MaxLength="200" />
+          <Property Name="CREATED_USER_ID" Type="int" Nullable="false" />
+          <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+          <Property Name="UPDATED_ID" Type="int" Nullable="false" />
+          <Property Name="UPDATED_TIME" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="M_USER_PROFILE">
+          <Key>
+            <PropertyRef Name="USER_PROFILE_ID" />
+          </Key>
+          <Property Name="USER_PROFILE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="USER_ID" Type="int" Nullable="false" />
+          <Property Name="FIRST_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LAST_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="GENDER" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PICTURE" Type="varchar" MaxLength="50" />
+          <Property Name="BIRTHDAY" Type="date" />
+          <Property Name="MAIL_COUNTRY" Type="nvarchar" MaxLength="200" />
+          <Property Name="MAIL_PROVINCE" Type="nvarchar" MaxLength="200" />
+          <Property Name="MAIL_CITY" Type="nvarchar" MaxLength="200" />
+          <Property Name="MAIL_ADDRESS1" Type="nvarchar" MaxLength="50" />
+          <Property Name="MAIL_ADDRESS2" Type="nvarchar" MaxLength="50" />
+          <Property Name="MAIL_ADDRESS3" Type="nvarchar" MaxLength="50" />
+          <Property Name="MAIL_ADDRESS4" Type="nvarchar" MaxLength="50" />
+          <Property Name="MAIL_FULL_ADDRESS" Type="nvarchar" MaxLength="200" />
+          <Property Name="MAIL_PHONE_NUMBER" Type="varchar" MaxLength="20" />
+          <Property Name="MOBILE_PHONE_NUMBER" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <Association Name="FK_M_LOGIN_M_MEDIA">
+          <End Role="M_MEDIA" Type="Self.M_MEDIA" Multiplicity="1" />
+          <End Role="M_LOGIN" Type="Self.M_LOGIN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="M_MEDIA">
+              <PropertyRef Name="MEDIA_ID" />
+            </Principal>
+            <Dependent Role="M_LOGIN">
+              <PropertyRef Name="MEDIA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_M_USER_PROFILE_M_USER1">
+          <End Role="M_USER" Type="Self.M_USER" Multiplicity="1" />
+          <End Role="M_USER_PROFILE" Type="Self.M_USER_PROFILE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="M_USER">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="M_USER_PROFILE">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="IoTModelStoreContainer">
+          <EntitySet Name="M_LOGIN" EntityType="Self.M_LOGIN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="M_MEDIA" EntityType="Self.M_MEDIA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="M_USER" EntityType="Self.M_USER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="M_USER_PROFILE" EntityType="Self.M_USER_PROFILE" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_M_LOGIN_M_MEDIA" Association="Self.FK_M_LOGIN_M_MEDIA">
+            <End Role="M_MEDIA" EntitySet="M_MEDIA" />
+            <End Role="M_LOGIN" EntitySet="M_LOGIN" />
+          </AssociationSet>
+          <AssociationSet Name="FK_M_USER_PROFILE_M_USER1" Association="Self.FK_M_USER_PROFILE_M_USER1">
+            <End Role="M_USER" EntitySet="M_USER" />
+            <End Role="M_USER_PROFILE" EntitySet="M_USER_PROFILE" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="IoTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="M_LOGIN">
+          <Key>
+            <PropertyRef Name="LOGIN_ID" />
+          </Key>
+          <Property Name="LOGIN_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USER_ID" Type="Int32" Nullable="false" />
+          <Property Name="MEDIA_ID" Type="Int32" Nullable="false" />
+          <Property Name="CHANNEL_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="USER_UUID" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DISPLAY_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PHOTO" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS_MESSAGE" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CREATED_USER_ID" Type="Int32" Nullable="false" />
+          <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UPDATED_ID" Type="Int32" Nullable="false" />
+          <Property Name="UPDATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="M_MEDIA" Relationship="Self.FK_M_LOGIN_M_MEDIA" FromRole="M_LOGIN" ToRole="M_MEDIA" />
+        </EntityType>
+        <EntityType Name="M_MEDIA">
+          <Key>
+            <PropertyRef Name="MEDIA_ID" />
+          </Key>
+          <Property Name="MEDIA_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LCL_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IS_ACTIVE" Type="Boolean" Nullable="false" />
+          <Property Name="CREATED_USER_ID" Type="Int32" Nullable="false" />
+          <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UPDATED_ID" Type="Int32" Nullable="false" />
+          <Property Name="UPDATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="M_LOGIN" Relationship="Self.FK_M_LOGIN_M_MEDIA" FromRole="M_MEDIA" ToRole="M_LOGIN" />
+        </EntityType>
+        <EntityType Name="M_USER">
+          <Key>
+            <PropertyRef Name="USER_ID" />
+          </Key>
+          <Property Name="USER_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="USER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EMAIL_CONFIRMED" Type="Boolean" Nullable="false" />
+          <Property Name="PASSWORD_HASH" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SECURITY_STAMP" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="REQUIRED_CHANGE_PASSWORD" Type="Boolean" />
+          <Property Name="PASSWORD_CHANGED_TIME" Type="DateTime" Precision="3" />
+          <Property Name="PHONE_NUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PHONE_NUMBER_CONFIRMED" Type="Boolean" Nullable="false" />
+          <Property Name="TWO_FACTOR_ENABLED" Type="Boolean" Nullable="false" />
+          <Property Name="LOCKOUT_END_TIME" Type="DateTime" Precision="3" />
+          <Property Name="LOCKOUT_ENABLED" Type="Boolean" Nullable="false" />
+          <Property Name="ACCESS_FAILED_COUNT" Type="Int32" Nullable="false" />
+          <Property Name="IS_ONLINE" Type="Boolean" Nullable="false" />
+          <Property Name="IS_ACTIVE" Type="Boolean" Nullable="false" />
+          <Property Name="LANGUAGE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="LAST_LOGIN_TIME" Type="DateTime" Precision="3" />
+          <Property Name="LAST_LOGOFF_TIME" Type="DateTime" Precision="3" />
+          <Property Name="SESSION_ID" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="PASSCODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="PASSCODE_EXPIRED" Type="DateTime" Precision="3" />
+          <Property Name="CHANNEL_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="USER_UUID" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CREATED_USER_ID" Type="Int32" Nullable="false" />
+          <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UPDATED_ID" Type="Int32" Nullable="false" />
+          <Property Name="UPDATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="M_USER_PROFILE" Relationship="Self.FK_M_USER_PROFILE_M_USER1" FromRole="M_USER" ToRole="M_USER_PROFILE" />
+        </EntityType>
+        <EntityType Name="M_USER_PROFILE">
+          <Key>
+            <PropertyRef Name="USER_PROFILE_ID" />
+          </Key>
+          <Property Name="USER_PROFILE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USER_ID" Type="Int32" Nullable="false" />
+          <Property Name="FIRST_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LAST_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GENDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PICTURE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BIRTHDAY" Type="DateTime" Precision="0" />
+          <Property Name="MAIL_COUNTRY" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="MAIL_PROVINCE" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="MAIL_CITY" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="MAIL_ADDRESS1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MAIL_ADDRESS2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MAIL_ADDRESS3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MAIL_ADDRESS4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MAIL_FULL_ADDRESS" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="MAIL_PHONE_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MOBILE_PHONE_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="M_USER" Relationship="Self.FK_M_USER_PROFILE_M_USER1" FromRole="M_USER_PROFILE" ToRole="M_USER" />
+        </EntityType>
+        <Association Name="FK_M_LOGIN_M_MEDIA">
+          <End Role="M_MEDIA" Type="Self.M_MEDIA" Multiplicity="1" />
+          <End Role="M_LOGIN" Type="Self.M_LOGIN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="M_MEDIA">
+              <PropertyRef Name="MEDIA_ID" />
+            </Principal>
+            <Dependent Role="M_LOGIN">
+              <PropertyRef Name="MEDIA_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_M_USER_PROFILE_M_USER1">
+          <End Role="M_USER" Type="Self.M_USER" Multiplicity="1" />
+          <End Role="M_USER_PROFILE" Type="Self.M_USER_PROFILE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="M_USER">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="M_USER_PROFILE">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="IoTEntity" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="M_LOGIN" EntityType="Self.M_LOGIN" />
+          <EntitySet Name="M_MEDIA" EntityType="Self.M_MEDIA" />
+          <EntitySet Name="M_USER" EntityType="Self.M_USER" />
+          <EntitySet Name="M_USER_PROFILE" EntityType="Self.M_USER_PROFILE" />
+          <AssociationSet Name="FK_M_LOGIN_M_MEDIA" Association="Self.FK_M_LOGIN_M_MEDIA">
+            <End Role="M_MEDIA" EntitySet="M_MEDIA" />
+            <End Role="M_LOGIN" EntitySet="M_LOGIN" />
+          </AssociationSet>
+          <AssociationSet Name="FK_M_USER_PROFILE_M_USER1" Association="Self.FK_M_USER_PROFILE_M_USER1">
+            <End Role="M_USER" EntitySet="M_USER" />
+            <End Role="M_USER_PROFILE" EntitySet="M_USER_PROFILE" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="IoTModelStoreContainer" CdmEntityContainer="IoTEntity">
+          <EntitySetMapping Name="M_LOGIN">
+            <EntityTypeMapping TypeName="IoTModel.M_LOGIN">
+              <MappingFragment StoreEntitySet="M_LOGIN">
+                <ScalarProperty Name="LOGIN_ID" ColumnName="LOGIN_ID" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="MEDIA_ID" ColumnName="MEDIA_ID" />
+                <ScalarProperty Name="CHANNEL_ID" ColumnName="CHANNEL_ID" />
+                <ScalarProperty Name="USER_UUID" ColumnName="USER_UUID" />
+                <ScalarProperty Name="DISPLAY_NAME" ColumnName="DISPLAY_NAME" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="PHOTO" ColumnName="PHOTO" />
+                <ScalarProperty Name="STATUS_MESSAGE" ColumnName="STATUS_MESSAGE" />
+                <ScalarProperty Name="CREATED_USER_ID" ColumnName="CREATED_USER_ID" />
+                <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+                <ScalarProperty Name="UPDATED_ID" ColumnName="UPDATED_ID" />
+                <ScalarProperty Name="UPDATED_TIME" ColumnName="UPDATED_TIME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="M_MEDIA">
+            <EntityTypeMapping TypeName="IoTModel.M_MEDIA">
+              <MappingFragment StoreEntitySet="M_MEDIA">
+                <ScalarProperty Name="MEDIA_ID" ColumnName="MEDIA_ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="LCL_NAME" ColumnName="LCL_NAME" />
+                <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+                <ScalarProperty Name="CREATED_USER_ID" ColumnName="CREATED_USER_ID" />
+                <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+                <ScalarProperty Name="UPDATED_ID" ColumnName="UPDATED_ID" />
+                <ScalarProperty Name="UPDATED_TIME" ColumnName="UPDATED_TIME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="M_USER">
+            <EntityTypeMapping TypeName="IoTModel.M_USER">
+              <MappingFragment StoreEntitySet="M_USER">
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+                <ScalarProperty Name="EMAIL_CONFIRMED" ColumnName="EMAIL_CONFIRMED" />
+                <ScalarProperty Name="PASSWORD_HASH" ColumnName="PASSWORD_HASH" />
+                <ScalarProperty Name="SECURITY_STAMP" ColumnName="SECURITY_STAMP" />
+                <ScalarProperty Name="REQUIRED_CHANGE_PASSWORD" ColumnName="REQUIRED_CHANGE_PASSWORD" />
+                <ScalarProperty Name="PASSWORD_CHANGED_TIME" ColumnName="PASSWORD_CHANGED_TIME" />
+                <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+                <ScalarProperty Name="PHONE_NUMBER_CONFIRMED" ColumnName="PHONE_NUMBER_CONFIRMED" />
+                <ScalarProperty Name="TWO_FACTOR_ENABLED" ColumnName="TWO_FACTOR_ENABLED" />
+                <ScalarProperty Name="LOCKOUT_END_TIME" ColumnName="LOCKOUT_END_TIME" />
+                <ScalarProperty Name="LOCKOUT_ENABLED" ColumnName="LOCKOUT_ENABLED" />
+                <ScalarProperty Name="ACCESS_FAILED_COUNT" ColumnName="ACCESS_FAILED_COUNT" />
+                <ScalarProperty Name="IS_ONLINE" ColumnName="IS_ONLINE" />
+                <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+                <ScalarProperty Name="LANGUAGE" ColumnName="LANGUAGE" />
+                <ScalarProperty Name="LAST_LOGIN_TIME" ColumnName="LAST_LOGIN_TIME" />
+                <ScalarProperty Name="LAST_LOGOFF_TIME" ColumnName="LAST_LOGOFF_TIME" />
+                <ScalarProperty Name="SESSION_ID" ColumnName="SESSION_ID" />
+                <ScalarProperty Name="PASSCODE" ColumnName="PASSCODE" />
+                <ScalarProperty Name="PASSCODE_EXPIRED" ColumnName="PASSCODE_EXPIRED" />
+                <ScalarProperty Name="CHANNEL_ID" ColumnName="CHANNEL_ID" />
+                <ScalarProperty Name="USER_UUID" ColumnName="USER_UUID" />
+                <ScalarProperty Name="CREATED_USER_ID" ColumnName="CREATED_USER_ID" />
+                <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+                <ScalarProperty Name="UPDATED_ID" ColumnName="UPDATED_ID" />
+                <ScalarProperty Name="UPDATED_TIME" ColumnName="UPDATED_TIME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="M_USER_PROFILE">
+            <EntityTypeMapping TypeName="IoTModel.M_USER_PROFILE">
+              <MappingFragment StoreEntitySet="M_USER_PROFILE">
+                <ScalarProperty Name="USER_PROFILE_ID" ColumnName="USER_PROFILE_ID" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+                <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+                <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+                <ScalarProperty Name="PICTURE" ColumnName="PICTURE" />
+                <ScalarProperty Name="BIRTHDAY" ColumnName="BIRTHDAY" />
+                <ScalarProperty Name="MAIL_COUNTRY" ColumnName="MAIL_COUNTRY" />
+                <ScalarProperty Name="MAIL_PROVINCE" ColumnName="MAIL_PROVINCE" />
+                <ScalarProperty Name="MAIL_CITY" ColumnName="MAIL_CITY" />
+                <ScalarProperty Name="MAIL_ADDRESS1" ColumnName="MAIL_ADDRESS1" />
+                <ScalarProperty Name="MAIL_ADDRESS2" ColumnName="MAIL_ADDRESS2" />
+                <ScalarProperty Name="MAIL_ADDRESS3" ColumnName="MAIL_ADDRESS3" />
+                <ScalarProperty Name="MAIL_ADDRESS4" ColumnName="MAIL_ADDRESS4" />
+                <ScalarProperty Name="MAIL_FULL_ADDRESS" ColumnName="MAIL_FULL_ADDRESS" />
+                <ScalarProperty Name="MAIL_PHONE_NUMBER" ColumnName="MAIL_PHONE_NUMBER" />
+                <ScalarProperty Name="MOBILE_PHONE_NUMBER" ColumnName="MOBILE_PHONE_NUMBER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

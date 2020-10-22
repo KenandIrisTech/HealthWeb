@@ -1,0 +1,89 @@
+﻿@using Syncfusion.EJ2
+@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Shared/_LayoutChildPage.cshtml";
+}
+
+<div class="flex-container-vertical" style="max-width:400px; height:600px; justify-content:center;">
+    <div class="flex-container-vertical" style="">
+        <div class="flex-item" style="align-self:center"><label>Google</label></div>
+        <div class="flex-item" style="align-self:center">
+            <span class="e-avatar e-avatar-xlarge e-avatar-circle ki-image" style="background-image: url(https://profile.line-scdn.net/0m0182dfb37251b85732fd615faf6b229c2fbf76cc17ac)"></span>
+        </div>
+        <div class="flex-item" style="align-self:center"><label>KenLi</label></div>
+        <div class="flex-item" style="align-self:center;font-weight:bold; font-size:1.2em;"><label>註冊帳號</label></div>
+        <div class="flex-item" style="align-self:center"><label>建立屬於您的帳號</label></div>
+        <div class="flex-item">
+            @Html.EJS().TextBox("email").Placeholder("電子郵件").Type("email").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).Render()
+        </div>
+        <div class="flex-item">
+            @Html.EJS().TextBox("email_confirm").Placeholder("確認電子郵件").Type("email").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).Render()
+        </div>
+        <div class="flex-item">
+            @Html.EJS().TextBox("password").Placeholder("密碼").Type("password").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).Render()
+        </div>
+        <div class="flex-item">
+            @Html.EJS().TextBox("password_confirm").Placeholder("確認密碼").Type("password").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).Render()
+        </div>
+        <div class="flex-item">
+            @Html.EJS().Button("singup").Content("建立帳號").CssClass("flext-item flex-item-fullrow e-primary").Render()
+        </div>
+        <div class="flex-item" style="align-self:flex-end;">
+            <label>我已經有了帳號  </label>@Html.EJS().Button("login").Click("login").IsPrimary(true).Content("按我登入").CssClass("e-outline e-small").Render()
+        </div>
+    </div>
+</div>
+@section scripts
+{
+    <script type="text/javascript">
+        function login() {
+            window.location.href = '/Account/Login';
+        }
+    </script>
+}
+<style type="text/css">
+
+    .flex-container-vertical {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .flex-container-horizontal {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .flex-item {
+        display: flex;
+        line-height: 36px;
+    }
+
+    .flex-item label {
+        color: #454545;
+    }
+
+    .flex-item-fullrow {
+        width: 100%;
+    }
+
+    .facebook-style {
+        color: white;
+        background-color: #3b5998;
+    }
+
+    .line-style {
+        color: white;
+        background-color: #00c300;
+    }
+
+    .flex-item button {
+        border-radius: 16px 16px;
+        margin: 6px 0;
+    }
+
+    .e-avatar.ki-image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+</style>

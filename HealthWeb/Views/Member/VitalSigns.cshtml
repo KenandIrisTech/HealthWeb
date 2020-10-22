@@ -1,0 +1,84 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Navigations
+@using Syncfusion.EJ2.Grids
+@{
+    ViewBag.Title = "VitalSign";
+    if (ViewBag.PartialPage == null || !ViewBag.PartialPage)
+    {
+        Layout = "~/Views/Shared/_LayoutKinHealthMemberDemo.cshtml";
+    }
+}
+
+
+<div class="row">
+    <div class="col" style="margin:0 5px 0 5px;">
+        @Html.EJS().Tab("tabVitalSigns").Items(tab =>
+        {
+            tab.Header(h => { h.Text("體溫").IconCss("demo-icons demo-icon-temperature"); }).Content("#tabBodyTemperature").Add();
+            tab.Header(h => { h.Text("血壓").IconCss("demo-icons demo-icon-pressure"); }).Content("#tabBodyPressure").Add();
+            tab.Header(h => { h.Text("血糖").IconCss("demo-icons demo-icon-sugar"); }).Content("#tabBodySugar").Add();
+            tab.Header(h => { h.Text("運動").IconCss("demo-icons demo-icon-sport"); }).Content("#tabSport").Add();
+        }).Render()
+    </div>
+</div>
+
+<div id="tabBodyTemperature" style="display:none">
+    @Html.EJS().Grid("gridBodyTemperature").AllowPaging(true).Columns(col =>
+    {
+        col.Field("Area").HeaderText("場域").Add();
+        col.Field("MeasurementTime").HeaderText("量測時間").Format("yyyy-Mm-dd HH:mm").Add();
+        col.Field("Value").HeaderText("體溫值").Format("##.00/C").TextAlign(TextAlign.Right).Add();
+        col.Add();
+    }).DataSource(ViewBag.TemperatureList).Render()
+</div>
+
+<div id="tabBodyPressure" style="display:none">
+    @Html.EJS().Grid("gridBodyPressure").AllowPaging(true).Columns(col =>
+    {
+        col.Field("Area").HeaderText("場域").Add();
+        col.Field("MeasurementTime").HeaderText("量測時間").Width("20%").Format("yyyy-Mm-dd HH:mm").Add();
+        col.Field("Pulse").HeaderText("脈搏").Format("##").TextAlign(TextAlign.Right).Add();
+        col.Field("HP").HeaderText("高血壓").Format("###").TextAlign(TextAlign.Right).Add();
+        col.Field("LP").HeaderText("低血壓").Format("###").TextAlign(TextAlign.Right).Add();
+        col.Add();
+    }).DataSource(ViewBag.BodyPressureList).Render()
+</div>
+
+<div id="tabBodySugar" style="display:none">
+    @Html.EJS().Grid("gridBodySugar").AllowPaging(true).Columns(col =>
+    {
+        col.Field("Area").HeaderText("場域").Add();
+        col.Field("MeasurementTime").HeaderText("量測時間").Width("20%").Format("yyyy-Mm-dd HH:mm").Add();
+        col.Field("MeasurementType").HeaderText("量測類型").Width("20%").Add();
+        col.Field("BS").HeaderText("血糖").Format("##").TextAlign(TextAlign.Right).Add();
+    }).DataSource(ViewBag.BodySugarList).Render()
+</div>
+
+<div id="tabSport" style="display:none">
+    @Html.EJS().Grid("gridSport").AllowPaging(true).Columns(col =>
+   {
+       col.Field("Area").HeaderText("場域").Width("18%").Add();
+       col.Field("MeasurementTime").HeaderText("運動時間").Width("20%").Format("yyyy-Mm-dd HH:mm").Add();
+       col.Field("TotalDuration").HeaderText("運動總時數").Format("##").TextAlign(TextAlign.Right).Width("18%").Add();
+       col.Field("DIST").HeaderText("距離").Format("###").TextAlign(TextAlign.Right).Width("15%").Add();
+       col.Field("CAL").HeaderText("卡路里").Format("###").TextAlign(TextAlign.Right).Width("15%").Add();
+       col.Field("AvgHeart").HeaderText("平均心律").Format("###").TextAlign(TextAlign.Right).Width("18%").Add();
+       col.Add();
+   }).DataSource(ViewBag.SportList).Render()
+</div>
+
+<style type="text/css">
+    .e-tab .e-tab-header .e-toolbar-item .e-tab-text
+    {
+        font-size: 25px;
+    }
+
+    .e-grid .e-headercelldiv {
+        font-size: 20px;
+        font-weight:bolder;
+    }
+
+    .e-grid .e-rowcell {
+        font-size: 18px;
+    }
+</style>

@@ -1,0 +1,5627 @@
+[
+  {
+    "XValue": "2020/8/1 08:00",
+    "YValue": 180,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 09:00",
+    "YValue": 63,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 10:00",
+    "YValue": 189,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 11:00",
+    "YValue": 101,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 12:00",
+    "YValue": 181,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 13:00",
+    "YValue": 78,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 14:00",
+    "YValue": 107,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 15:00",
+    "YValue": 161,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 16:00",
+    "YValue": 122,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 17:00",
+    "YValue": 143,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 18:00",
+    "YValue": 164,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 19:00",
+    "YValue": 2,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 20:00",
+    "YValue": 10,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 21:00",
+    "YValue": 181,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 22:00",
+    "YValue": 42,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 08:00",
+    "YValue": 86,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 09:00",
+    "YValue": 46,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 10:00",
+    "YValue": 183,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 11:00",
+    "YValue": 40,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 12:00",
+    "YValue": 94,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 13:00",
+    "YValue": 0,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 14:00",
+    "YValue": 55,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 15:00",
+    "YValue": 46,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 16:00",
+    "YValue": 194,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 17:00",
+    "YValue": 128,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 18:00",
+    "YValue": 63,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 19:00",
+    "YValue": 48,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 20:00",
+    "YValue": 187,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 21:00",
+    "YValue": 53,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/2 22:00",
+    "YValue": 84,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 08:00",
+    "YValue": 36,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 09:00",
+    "YValue": 178,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 10:00",
+    "YValue": 182,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 11:00",
+    "YValue": 99,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 12:00",
+    "YValue": 80,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 13:00",
+    "YValue": 141,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 14:00",
+    "YValue": 10,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 15:00",
+    "YValue": 20,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 16:00",
+    "YValue": 21,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 17:00",
+    "YValue": 191,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 18:00",
+    "YValue": 59,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 19:00",
+    "YValue": 3,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 20:00",
+    "YValue": 56,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 21:00",
+    "YValue": 135,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/3 22:00",
+    "YValue": 121,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 08:00",
+    "YValue": 140,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 09:00",
+    "YValue": 190,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 10:00",
+    "YValue": 69,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 11:00",
+    "YValue": 19,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 12:00",
+    "YValue": 3,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 13:00",
+    "YValue": 16,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 14:00",
+    "YValue": 131,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 15:00",
+    "YValue": 157,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 16:00",
+    "YValue": 105,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 17:00",
+    "YValue": 18,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 18:00",
+    "YValue": 60,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 19:00",
+    "YValue": 61,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 20:00",
+    "YValue": 124,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 21:00",
+    "YValue": 13,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/4 22:00",
+    "YValue": 89,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 08:00",
+    "YValue": 24,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 09:00",
+    "YValue": 125,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 10:00",
+    "YValue": 83,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 11:00",
+    "YValue": 177,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 12:00",
+    "YValue": 46,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 13:00",
+    "YValue": 125,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 14:00",
+    "YValue": 161,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 15:00",
+    "YValue": 174,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 16:00",
+    "YValue": 176,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 17:00",
+    "YValue": 43,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 18:00",
+    "YValue": 36,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 19:00",
+    "YValue": 193,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 20:00",
+    "YValue": 151,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 21:00",
+    "YValue": 45,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/5 22:00",
+    "YValue": 198,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 08:00",
+    "YValue": 186,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 09:00",
+    "YValue": 115,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 10:00",
+    "YValue": 186,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 11:00",
+    "YValue": 164,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 12:00",
+    "YValue": 168,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 13:00",
+    "YValue": 190,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 14:00",
+    "YValue": 155,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 15:00",
+    "YValue": 114,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 16:00",
+    "YValue": 176,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 17:00",
+    "YValue": 4,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 18:00",
+    "YValue": 51,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 19:00",
+    "YValue": 19,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 20:00",
+    "YValue": 15,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 21:00",
+    "YValue": 34,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/6 22:00",
+    "YValue": 185,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 08:00",
+    "YValue": 192,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 09:00",
+    "YValue": 88,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 10:00",
+    "YValue": 199,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 11:00",
+    "YValue": 190,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 12:00",
+    "YValue": 146,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 13:00",
+    "YValue": 3,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 14:00",
+    "YValue": 101,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 15:00",
+    "YValue": 41,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 16:00",
+    "YValue": 5,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 17:00",
+    "YValue": 9,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 18:00",
+    "YValue": 6,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 19:00",
+    "YValue": 183,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 20:00",
+    "YValue": 7,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 21:00",
+    "YValue": 0,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/7 22:00",
+    "YValue": 152,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 08:00",
+    "YValue": 169,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 09:00",
+    "YValue": 177,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 10:00",
+    "YValue": 60,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 11:00",
+    "YValue": 83,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 12:00",
+    "YValue": 3,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 13:00",
+    "YValue": 86,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 14:00",
+    "YValue": 156,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 15:00",
+    "YValue": 30,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 16:00",
+    "YValue": 191,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 17:00",
+    "YValue": 183,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 18:00",
+    "YValue": 120,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 19:00",
+    "YValue": 125,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 20:00",
+    "YValue": 102,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 21:00",
+    "YValue": 101,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/8 22:00",
+    "YValue": 45,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 08:00",
+    "YValue": 30,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 09:00",
+    "YValue": 74,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 10:00",
+    "YValue": 99,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 11:00",
+    "YValue": 123,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 12:00",
+    "YValue": 105,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 13:00",
+    "YValue": 127,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 14:00",
+    "YValue": 175,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 15:00",
+    "YValue": 33,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 16:00",
+    "YValue": 35,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 17:00",
+    "YValue": 146,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 18:00",
+    "YValue": 17,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 19:00",
+    "YValue": 59,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 20:00",
+    "YValue": 138,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 21:00",
+    "YValue": 180,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/9 22:00",
+    "YValue": 153,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 08:00",
+    "YValue": 97,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 09:00",
+    "YValue": 60,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 10:00",
+    "YValue": 184,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 11:00",
+    "YValue": 133,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 12:00",
+    "YValue": 161,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 13:00",
+    "YValue": 83,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 14:00",
+    "YValue": 20,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 15:00",
+    "YValue": 69,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 16:00",
+    "YValue": 155,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 17:00",
+    "YValue": 35,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 18:00",
+    "YValue": 135,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 19:00",
+    "YValue": 15,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 20:00",
+    "YValue": 127,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 21:00",
+    "YValue": 54,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/10 22:00",
+    "YValue": 2,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 08:00",
+    "YValue": 28,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 09:00",
+    "YValue": 24,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 10:00",
+    "YValue": 79,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 11:00",
+    "YValue": 135,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 12:00",
+    "YValue": 25,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 13:00",
+    "YValue": 165,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 14:00",
+    "YValue": 49,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 15:00",
+    "YValue": 52,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 16:00",
+    "YValue": 188,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 17:00",
+    "YValue": 135,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 18:00",
+    "YValue": 88,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 19:00",
+    "YValue": 195,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 20:00",
+    "YValue": 49,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 21:00",
+    "YValue": 37,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/11 22:00",
+    "YValue": 159,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 08:00",
+    "YValue": 161,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 09:00",
+    "YValue": 179,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 10:00",
+    "YValue": 5,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 11:00",
+    "YValue": 190,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 12:00",
+    "YValue": 143,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 13:00",
+    "YValue": 95,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 14:00",
+    "YValue": 185,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 15:00",
+    "YValue": 99,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 16:00",
+    "YValue": 79,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 17:00",
+    "YValue": 141,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 18:00",
+    "YValue": 143,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 19:00",
+    "YValue": 92,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 20:00",
+    "YValue": 106,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 21:00",
+    "YValue": 200,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/12 22:00",
+    "YValue": 119,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 08:00",
+    "YValue": 168,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 09:00",
+    "YValue": 34,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 10:00",
+    "YValue": 49,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 11:00",
+    "YValue": 15,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 12:00",
+    "YValue": 183,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 13:00",
+    "YValue": 104,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 14:00",
+    "YValue": 118,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 15:00",
+    "YValue": 54,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 16:00",
+    "YValue": 52,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 17:00",
+    "YValue": 79,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 18:00",
+    "YValue": 100,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 19:00",
+    "YValue": 97,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 20:00",
+    "YValue": 123,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 21:00",
+    "YValue": 124,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/13 22:00",
+    "YValue": 141,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 08:00",
+    "YValue": 157,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 09:00",
+    "YValue": 54,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 10:00",
+    "YValue": 112,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 11:00",
+    "YValue": 33,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 12:00",
+    "YValue": 30,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 13:00",
+    "YValue": 5,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 14:00",
+    "YValue": 27,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 15:00",
+    "YValue": 83,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 16:00",
+    "YValue": 186,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 17:00",
+    "YValue": 184,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 18:00",
+    "YValue": 114,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 19:00",
+    "YValue": 172,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 20:00",
+    "YValue": 145,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 21:00",
+    "YValue": 29,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/14 22:00",
+    "YValue": 27,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 08:00",
+    "YValue": 129,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 09:00",
+    "YValue": 61,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 10:00",
+    "YValue": 46,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 11:00",
+    "YValue": 198,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 12:00",
+    "YValue": 123,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 13:00",
+    "YValue": 29,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 14:00",
+    "YValue": 181,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 15:00",
+    "YValue": 99,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 16:00",
+    "YValue": 20,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 17:00",
+    "YValue": 185,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 18:00",
+    "YValue": 200,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 19:00",
+    "YValue": 143,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 20:00",
+    "YValue": 176,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 21:00",
+    "YValue": 71,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/15 22:00",
+    "YValue": 165,
+    "Placement": 1
+  },
+  {
+    "XValue": "2020/8/1 08:00",
+    "YValue": 15,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 09:00",
+    "YValue": 159,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 10:00",
+    "YValue": 14,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 11:00",
+    "YValue": 33,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 12:00",
+    "YValue": 33,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 13:00",
+    "YValue": 30,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 14:00",
+    "YValue": 174,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 15:00",
+    "YValue": 197,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 16:00",
+    "YValue": 41,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 17:00",
+    "YValue": 51,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 18:00",
+    "YValue": 19,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 19:00",
+    "YValue": 190,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 20:00",
+    "YValue": 130,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 21:00",
+    "YValue": 48,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 22:00",
+    "YValue": 194,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 08:00",
+    "YValue": 108,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 09:00",
+    "YValue": 117,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 10:00",
+    "YValue": 118,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 11:00",
+    "YValue": 78,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 12:00",
+    "YValue": 165,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 13:00",
+    "YValue": 180,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 14:00",
+    "YValue": 62,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 15:00",
+    "YValue": 41,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 16:00",
+    "YValue": 15,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 17:00",
+    "YValue": 58,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 18:00",
+    "YValue": 183,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 19:00",
+    "YValue": 79,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 20:00",
+    "YValue": 104,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 21:00",
+    "YValue": 111,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/2 22:00",
+    "YValue": 13,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 08:00",
+    "YValue": 64,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 09:00",
+    "YValue": 194,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 10:00",
+    "YValue": 184,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 11:00",
+    "YValue": 38,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 12:00",
+    "YValue": 153,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 13:00",
+    "YValue": 193,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 14:00",
+    "YValue": 190,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 15:00",
+    "YValue": 136,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 16:00",
+    "YValue": 98,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 17:00",
+    "YValue": 137,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 18:00",
+    "YValue": 192,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 19:00",
+    "YValue": 71,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 20:00",
+    "YValue": 131,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 21:00",
+    "YValue": 154,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/3 22:00",
+    "YValue": 146,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 08:00",
+    "YValue": 83,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 09:00",
+    "YValue": 73,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 10:00",
+    "YValue": 95,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 11:00",
+    "YValue": 4,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 12:00",
+    "YValue": 103,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 13:00",
+    "YValue": 188,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 14:00",
+    "YValue": 41,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 15:00",
+    "YValue": 160,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 16:00",
+    "YValue": 163,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 17:00",
+    "YValue": 131,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 18:00",
+    "YValue": 143,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 19:00",
+    "YValue": 18,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 20:00",
+    "YValue": 70,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 21:00",
+    "YValue": 137,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/4 22:00",
+    "YValue": 185,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 08:00",
+    "YValue": 151,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 09:00",
+    "YValue": 43,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 10:00",
+    "YValue": 66,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 11:00",
+    "YValue": 178,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 12:00",
+    "YValue": 75,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 13:00",
+    "YValue": 167,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 14:00",
+    "YValue": 1,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 15:00",
+    "YValue": 84,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 16:00",
+    "YValue": 189,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 17:00",
+    "YValue": 197,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 18:00",
+    "YValue": 93,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 19:00",
+    "YValue": 181,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 20:00",
+    "YValue": 171,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 21:00",
+    "YValue": 47,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/5 22:00",
+    "YValue": 72,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 08:00",
+    "YValue": 136,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 09:00",
+    "YValue": 98,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 10:00",
+    "YValue": 192,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 11:00",
+    "YValue": 108,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 12:00",
+    "YValue": 80,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 13:00",
+    "YValue": 152,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 14:00",
+    "YValue": 184,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 15:00",
+    "YValue": 196,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 16:00",
+    "YValue": 159,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 17:00",
+    "YValue": 117,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 18:00",
+    "YValue": 70,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 19:00",
+    "YValue": 42,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 20:00",
+    "YValue": 119,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 21:00",
+    "YValue": 199,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/6 22:00",
+    "YValue": 111,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 08:00",
+    "YValue": 177,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 09:00",
+    "YValue": 185,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 10:00",
+    "YValue": 75,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 11:00",
+    "YValue": 94,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 12:00",
+    "YValue": 184,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 13:00",
+    "YValue": 51,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 14:00",
+    "YValue": 188,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 15:00",
+    "YValue": 50,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 16:00",
+    "YValue": 7,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 17:00",
+    "YValue": 42,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 18:00",
+    "YValue": 191,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 19:00",
+    "YValue": 18,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 20:00",
+    "YValue": 91,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 21:00",
+    "YValue": 167,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/7 22:00",
+    "YValue": 59,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 08:00",
+    "YValue": 61,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 09:00",
+    "YValue": 169,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 10:00",
+    "YValue": 146,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 11:00",
+    "YValue": 118,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 12:00",
+    "YValue": 43,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 13:00",
+    "YValue": 163,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 14:00",
+    "YValue": 163,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 15:00",
+    "YValue": 18,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 16:00",
+    "YValue": 116,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 17:00",
+    "YValue": 73,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 18:00",
+    "YValue": 5,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 19:00",
+    "YValue": 198,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 20:00",
+    "YValue": 108,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 21:00",
+    "YValue": 188,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/8 22:00",
+    "YValue": 3,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 08:00",
+    "YValue": 196,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 09:00",
+    "YValue": 79,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 10:00",
+    "YValue": 67,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 11:00",
+    "YValue": 157,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 12:00",
+    "YValue": 88,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 13:00",
+    "YValue": 186,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 14:00",
+    "YValue": 116,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 15:00",
+    "YValue": 12,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 16:00",
+    "YValue": 192,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 17:00",
+    "YValue": 173,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 18:00",
+    "YValue": 9,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 19:00",
+    "YValue": 4,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 20:00",
+    "YValue": 176,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 21:00",
+    "YValue": 16,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/9 22:00",
+    "YValue": 105,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 08:00",
+    "YValue": 101,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 09:00",
+    "YValue": 64,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 10:00",
+    "YValue": 10,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 11:00",
+    "YValue": 90,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 12:00",
+    "YValue": 192,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 13:00",
+    "YValue": 82,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 14:00",
+    "YValue": 53,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 15:00",
+    "YValue": 175,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 16:00",
+    "YValue": 62,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 17:00",
+    "YValue": 100,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 18:00",
+    "YValue": 199,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 19:00",
+    "YValue": 153,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 20:00",
+    "YValue": 121,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 21:00",
+    "YValue": 39,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/10 22:00",
+    "YValue": 170,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 08:00",
+    "YValue": 200,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 09:00",
+    "YValue": 63,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 10:00",
+    "YValue": 160,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 11:00",
+    "YValue": 94,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 12:00",
+    "YValue": 84,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 13:00",
+    "YValue": 58,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 14:00",
+    "YValue": 15,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 15:00",
+    "YValue": 146,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 16:00",
+    "YValue": 197,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 17:00",
+    "YValue": 124,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 18:00",
+    "YValue": 193,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 19:00",
+    "YValue": 189,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 20:00",
+    "YValue": 96,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 21:00",
+    "YValue": 60,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/11 22:00",
+    "YValue": 78,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 08:00",
+    "YValue": 16,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 09:00",
+    "YValue": 126,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 10:00",
+    "YValue": 186,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 11:00",
+    "YValue": 138,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 12:00",
+    "YValue": 192,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 13:00",
+    "YValue": 115,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 14:00",
+    "YValue": 17,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 15:00",
+    "YValue": 33,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 16:00",
+    "YValue": 68,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 17:00",
+    "YValue": 59,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 18:00",
+    "YValue": 48,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 19:00",
+    "YValue": 19,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 20:00",
+    "YValue": 146,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 21:00",
+    "YValue": 99,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/12 22:00",
+    "YValue": 45,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 08:00",
+    "YValue": 158,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 09:00",
+    "YValue": 56,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 10:00",
+    "YValue": 176,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 11:00",
+    "YValue": 5,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 12:00",
+    "YValue": 111,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 13:00",
+    "YValue": 75,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 14:00",
+    "YValue": 105,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 15:00",
+    "YValue": 24,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 16:00",
+    "YValue": 158,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 17:00",
+    "YValue": 54,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 18:00",
+    "YValue": 101,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 19:00",
+    "YValue": 84,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 20:00",
+    "YValue": 137,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 21:00",
+    "YValue": 28,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/13 22:00",
+    "YValue": 155,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 08:00",
+    "YValue": 25,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 09:00",
+    "YValue": 82,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 10:00",
+    "YValue": 118,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 11:00",
+    "YValue": 9,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 12:00",
+    "YValue": 5,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 13:00",
+    "YValue": 141,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 14:00",
+    "YValue": 81,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 15:00",
+    "YValue": 10,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 16:00",
+    "YValue": 53,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 17:00",
+    "YValue": 74,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 18:00",
+    "YValue": 6,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 19:00",
+    "YValue": 87,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 20:00",
+    "YValue": 10,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 21:00",
+    "YValue": 37,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/14 22:00",
+    "YValue": 194,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 08:00",
+    "YValue": 194,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 09:00",
+    "YValue": 15,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 10:00",
+    "YValue": 51,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 11:00",
+    "YValue": 47,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 12:00",
+    "YValue": 25,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 13:00",
+    "YValue": 152,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 14:00",
+    "YValue": 19,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 15:00",
+    "YValue": 182,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 16:00",
+    "YValue": 55,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 17:00",
+    "YValue": 101,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 18:00",
+    "YValue": 2,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 19:00",
+    "YValue": 59,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 20:00",
+    "YValue": 140,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 21:00",
+    "YValue": 47,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/15 22:00",
+    "YValue": 97,
+    "Placement": 2
+  },
+  {
+    "XValue": "2020/8/1 08:00",
+    "YValue": 161,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 09:00",
+    "YValue": 18,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 10:00",
+    "YValue": 116,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 11:00",
+    "YValue": 163,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 12:00",
+    "YValue": 21,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 13:00",
+    "YValue": 25,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 14:00",
+    "YValue": 68,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 15:00",
+    "YValue": 112,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 16:00",
+    "YValue": 176,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 17:00",
+    "YValue": 11,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 18:00",
+    "YValue": 0,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 19:00",
+    "YValue": 23,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 20:00",
+    "YValue": 195,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 21:00",
+    "YValue": 2,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 22:00",
+    "YValue": 46,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 08:00",
+    "YValue": 159,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 09:00",
+    "YValue": 99,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 10:00",
+    "YValue": 130,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 11:00",
+    "YValue": 118,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 12:00",
+    "YValue": 19,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 13:00",
+    "YValue": 93,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 14:00",
+    "YValue": 74,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 15:00",
+    "YValue": 176,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 16:00",
+    "YValue": 106,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 17:00",
+    "YValue": 28,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 18:00",
+    "YValue": 200,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 19:00",
+    "YValue": 121,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 20:00",
+    "YValue": 136,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 21:00",
+    "YValue": 98,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/2 22:00",
+    "YValue": 3,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 08:00",
+    "YValue": 193,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 09:00",
+    "YValue": 128,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 10:00",
+    "YValue": 114,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 11:00",
+    "YValue": 97,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 12:00",
+    "YValue": 60,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 13:00",
+    "YValue": 74,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 14:00",
+    "YValue": 89,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 15:00",
+    "YValue": 163,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 16:00",
+    "YValue": 15,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 17:00",
+    "YValue": 48,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 18:00",
+    "YValue": 97,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 19:00",
+    "YValue": 32,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 20:00",
+    "YValue": 175,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 21:00",
+    "YValue": 151,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/3 22:00",
+    "YValue": 137,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 08:00",
+    "YValue": 90,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 09:00",
+    "YValue": 154,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 10:00",
+    "YValue": 141,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 11:00",
+    "YValue": 198,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 12:00",
+    "YValue": 79,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 13:00",
+    "YValue": 172,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 14:00",
+    "YValue": 116,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 15:00",
+    "YValue": 45,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 16:00",
+    "YValue": 94,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 17:00",
+    "YValue": 114,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 18:00",
+    "YValue": 188,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 19:00",
+    "YValue": 64,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 20:00",
+    "YValue": 180,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 21:00",
+    "YValue": 116,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/4 22:00",
+    "YValue": 60,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 08:00",
+    "YValue": 74,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 09:00",
+    "YValue": 161,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 10:00",
+    "YValue": 148,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 11:00",
+    "YValue": 182,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 12:00",
+    "YValue": 4,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 13:00",
+    "YValue": 187,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 14:00",
+    "YValue": 6,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 15:00",
+    "YValue": 188,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 16:00",
+    "YValue": 165,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 17:00",
+    "YValue": 194,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 18:00",
+    "YValue": 123,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 19:00",
+    "YValue": 92,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 20:00",
+    "YValue": 157,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 21:00",
+    "YValue": 155,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/5 22:00",
+    "YValue": 199,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 08:00",
+    "YValue": 197,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 09:00",
+    "YValue": 49,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 10:00",
+    "YValue": 38,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 11:00",
+    "YValue": 16,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 12:00",
+    "YValue": 15,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 13:00",
+    "YValue": 128,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 14:00",
+    "YValue": 70,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 15:00",
+    "YValue": 149,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 16:00",
+    "YValue": 90,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 17:00",
+    "YValue": 152,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 18:00",
+    "YValue": 146,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 19:00",
+    "YValue": 122,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 20:00",
+    "YValue": 91,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 21:00",
+    "YValue": 186,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/6 22:00",
+    "YValue": 153,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 08:00",
+    "YValue": 59,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 09:00",
+    "YValue": 137,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 10:00",
+    "YValue": 154,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 11:00",
+    "YValue": 167,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 12:00",
+    "YValue": 136,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 13:00",
+    "YValue": 140,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 14:00",
+    "YValue": 171,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 15:00",
+    "YValue": 154,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 16:00",
+    "YValue": 140,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 17:00",
+    "YValue": 21,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 18:00",
+    "YValue": 158,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 19:00",
+    "YValue": 62,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 20:00",
+    "YValue": 81,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 21:00",
+    "YValue": 193,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/7 22:00",
+    "YValue": 194,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 08:00",
+    "YValue": 146,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 09:00",
+    "YValue": 106,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 10:00",
+    "YValue": 113,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 11:00",
+    "YValue": 77,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 12:00",
+    "YValue": 110,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 13:00",
+    "YValue": 39,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 14:00",
+    "YValue": 134,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 15:00",
+    "YValue": 12,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 16:00",
+    "YValue": 116,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 17:00",
+    "YValue": 158,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 18:00",
+    "YValue": 22,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 19:00",
+    "YValue": 73,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 20:00",
+    "YValue": 31,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 21:00",
+    "YValue": 34,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/8 22:00",
+    "YValue": 70,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 08:00",
+    "YValue": 46,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 09:00",
+    "YValue": 23,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 10:00",
+    "YValue": 167,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 11:00",
+    "YValue": 49,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 12:00",
+    "YValue": 137,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 13:00",
+    "YValue": 76,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 14:00",
+    "YValue": 124,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 15:00",
+    "YValue": 71,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 16:00",
+    "YValue": 64,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 17:00",
+    "YValue": 87,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 18:00",
+    "YValue": 145,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 19:00",
+    "YValue": 181,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 20:00",
+    "YValue": 19,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 21:00",
+    "YValue": 144,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/9 22:00",
+    "YValue": 21,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 08:00",
+    "YValue": 188,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 09:00",
+    "YValue": 95,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 10:00",
+    "YValue": 65,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 11:00",
+    "YValue": 14,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 12:00",
+    "YValue": 5,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 13:00",
+    "YValue": 120,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 14:00",
+    "YValue": 39,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 15:00",
+    "YValue": 6,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 16:00",
+    "YValue": 61,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 17:00",
+    "YValue": 146,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 18:00",
+    "YValue": 18,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 19:00",
+    "YValue": 143,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 20:00",
+    "YValue": 128,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 21:00",
+    "YValue": 106,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/10 22:00",
+    "YValue": 27,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 08:00",
+    "YValue": 72,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 09:00",
+    "YValue": 128,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 10:00",
+    "YValue": 178,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 11:00",
+    "YValue": 116,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 12:00",
+    "YValue": 87,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 13:00",
+    "YValue": 114,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 14:00",
+    "YValue": 141,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 15:00",
+    "YValue": 140,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 16:00",
+    "YValue": 76,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 17:00",
+    "YValue": 14,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 18:00",
+    "YValue": 60,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 19:00",
+    "YValue": 150,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 20:00",
+    "YValue": 58,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 21:00",
+    "YValue": 39,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/11 22:00",
+    "YValue": 196,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 08:00",
+    "YValue": 75,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 09:00",
+    "YValue": 127,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 10:00",
+    "YValue": 6,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 11:00",
+    "YValue": 120,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 12:00",
+    "YValue": 171,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 13:00",
+    "YValue": 8,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 14:00",
+    "YValue": 130,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 15:00",
+    "YValue": 181,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 16:00",
+    "YValue": 170,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 17:00",
+    "YValue": 118,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 18:00",
+    "YValue": 173,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 19:00",
+    "YValue": 74,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 20:00",
+    "YValue": 187,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 21:00",
+    "YValue": 67,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/12 22:00",
+    "YValue": 131,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 08:00",
+    "YValue": 8,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 09:00",
+    "YValue": 70,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 10:00",
+    "YValue": 144,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 11:00",
+    "YValue": 127,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 12:00",
+    "YValue": 39,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 13:00",
+    "YValue": 101,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 14:00",
+    "YValue": 130,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 15:00",
+    "YValue": 0,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 16:00",
+    "YValue": 197,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 17:00",
+    "YValue": 58,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 18:00",
+    "YValue": 141,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 19:00",
+    "YValue": 65,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 20:00",
+    "YValue": 3,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 21:00",
+    "YValue": 189,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/13 22:00",
+    "YValue": 183,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 08:00",
+    "YValue": 154,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 09:00",
+    "YValue": 142,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 10:00",
+    "YValue": 14,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 11:00",
+    "YValue": 109,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 12:00",
+    "YValue": 80,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 13:00",
+    "YValue": 157,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 14:00",
+    "YValue": 187,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 15:00",
+    "YValue": 97,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 16:00",
+    "YValue": 153,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 17:00",
+    "YValue": 154,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 18:00",
+    "YValue": 80,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 19:00",
+    "YValue": 159,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 20:00",
+    "YValue": 105,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 21:00",
+    "YValue": 57,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/14 22:00",
+    "YValue": 136,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 08:00",
+    "YValue": 46,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 09:00",
+    "YValue": 80,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 10:00",
+    "YValue": 38,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 11:00",
+    "YValue": 63,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 12:00",
+    "YValue": 122,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 13:00",
+    "YValue": 126,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 14:00",
+    "YValue": 161,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 15:00",
+    "YValue": 158,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 16:00",
+    "YValue": 29,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 17:00",
+    "YValue": 169,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 18:00",
+    "YValue": 36,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 19:00",
+    "YValue": 123,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 20:00",
+    "YValue": 14,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 21:00",
+    "YValue": 13,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/15 22:00",
+    "YValue": 113,
+    "Placement": 3
+  },
+  {
+    "XValue": "2020/8/1 08:00",
+    "YValue": 55,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 09:00",
+    "YValue": 107,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 10:00",
+    "YValue": 162,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 11:00",
+    "YValue": 68,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 12:00",
+    "YValue": 4,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 13:00",
+    "YValue": 56,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 14:00",
+    "YValue": 54,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 15:00",
+    "YValue": 184,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 16:00",
+    "YValue": 102,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 17:00",
+    "YValue": 163,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 18:00",
+    "YValue": 186,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 19:00",
+    "YValue": 68,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 20:00",
+    "YValue": 196,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 21:00",
+    "YValue": 41,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 22:00",
+    "YValue": 76,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 08:00",
+    "YValue": 72,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 09:00",
+    "YValue": 164,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 10:00",
+    "YValue": 3,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 11:00",
+    "YValue": 178,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 12:00",
+    "YValue": 102,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 13:00",
+    "YValue": 59,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 14:00",
+    "YValue": 128,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 15:00",
+    "YValue": 1,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 16:00",
+    "YValue": 118,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 17:00",
+    "YValue": 200,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 18:00",
+    "YValue": 113,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 19:00",
+    "YValue": 56,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 20:00",
+    "YValue": 94,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 21:00",
+    "YValue": 120,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/2 22:00",
+    "YValue": 57,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 08:00",
+    "YValue": 199,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 09:00",
+    "YValue": 61,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 10:00",
+    "YValue": 183,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 11:00",
+    "YValue": 23,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 12:00",
+    "YValue": 89,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 13:00",
+    "YValue": 174,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 14:00",
+    "YValue": 140,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 15:00",
+    "YValue": 147,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 16:00",
+    "YValue": 138,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 17:00",
+    "YValue": 85,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 18:00",
+    "YValue": 18,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 19:00",
+    "YValue": 110,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 20:00",
+    "YValue": 110,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 21:00",
+    "YValue": 17,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/3 22:00",
+    "YValue": 188,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 08:00",
+    "YValue": 14,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 09:00",
+    "YValue": 149,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 10:00",
+    "YValue": 36,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 11:00",
+    "YValue": 18,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 12:00",
+    "YValue": 92,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 13:00",
+    "YValue": 167,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 14:00",
+    "YValue": 91,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 15:00",
+    "YValue": 116,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 16:00",
+    "YValue": 110,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 17:00",
+    "YValue": 28,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 18:00",
+    "YValue": 83,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 19:00",
+    "YValue": 11,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 20:00",
+    "YValue": 65,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 21:00",
+    "YValue": 32,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/4 22:00",
+    "YValue": 102,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 08:00",
+    "YValue": 141,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 09:00",
+    "YValue": 162,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 10:00",
+    "YValue": 50,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 11:00",
+    "YValue": 188,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 12:00",
+    "YValue": 0,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 13:00",
+    "YValue": 128,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 14:00",
+    "YValue": 125,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 15:00",
+    "YValue": 45,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 16:00",
+    "YValue": 156,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 17:00",
+    "YValue": 134,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 18:00",
+    "YValue": 100,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 19:00",
+    "YValue": 164,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 20:00",
+    "YValue": 188,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 21:00",
+    "YValue": 4,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/5 22:00",
+    "YValue": 121,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 08:00",
+    "YValue": 70,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 09:00",
+    "YValue": 7,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 10:00",
+    "YValue": 103,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 11:00",
+    "YValue": 35,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 12:00",
+    "YValue": 106,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 13:00",
+    "YValue": 189,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 14:00",
+    "YValue": 35,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 15:00",
+    "YValue": 182,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 16:00",
+    "YValue": 27,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 17:00",
+    "YValue": 98,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 18:00",
+    "YValue": 150,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 19:00",
+    "YValue": 97,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 20:00",
+    "YValue": 89,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 21:00",
+    "YValue": 30,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/6 22:00",
+    "YValue": 192,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 08:00",
+    "YValue": 21,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 09:00",
+    "YValue": 169,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 10:00",
+    "YValue": 18,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 11:00",
+    "YValue": 144,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 12:00",
+    "YValue": 150,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 13:00",
+    "YValue": 178,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 14:00",
+    "YValue": 197,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 15:00",
+    "YValue": 170,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 16:00",
+    "YValue": 53,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 17:00",
+    "YValue": 71,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 18:00",
+    "YValue": 85,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 19:00",
+    "YValue": 58,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 20:00",
+    "YValue": 4,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 21:00",
+    "YValue": 110,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/7 22:00",
+    "YValue": 0,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 08:00",
+    "YValue": 125,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 09:00",
+    "YValue": 13,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 10:00",
+    "YValue": 80,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 11:00",
+    "YValue": 51,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 12:00",
+    "YValue": 65,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 13:00",
+    "YValue": 4,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 14:00",
+    "YValue": 4,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 15:00",
+    "YValue": 171,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 16:00",
+    "YValue": 25,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 17:00",
+    "YValue": 81,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 18:00",
+    "YValue": 44,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 19:00",
+    "YValue": 19,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 20:00",
+    "YValue": 90,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 21:00",
+    "YValue": 35,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/8 22:00",
+    "YValue": 92,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 08:00",
+    "YValue": 175,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 09:00",
+    "YValue": 112,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 10:00",
+    "YValue": 140,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 11:00",
+    "YValue": 28,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 12:00",
+    "YValue": 157,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 13:00",
+    "YValue": 161,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 14:00",
+    "YValue": 6,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 15:00",
+    "YValue": 73,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 16:00",
+    "YValue": 180,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 17:00",
+    "YValue": 69,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 18:00",
+    "YValue": 74,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 19:00",
+    "YValue": 99,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 20:00",
+    "YValue": 192,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 21:00",
+    "YValue": 80,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/9 22:00",
+    "YValue": 143,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 08:00",
+    "YValue": 104,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 09:00",
+    "YValue": 16,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 10:00",
+    "YValue": 192,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 11:00",
+    "YValue": 30,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 12:00",
+    "YValue": 116,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 13:00",
+    "YValue": 26,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 14:00",
+    "YValue": 12,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 15:00",
+    "YValue": 49,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 16:00",
+    "YValue": 68,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 17:00",
+    "YValue": 2,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 18:00",
+    "YValue": 39,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 19:00",
+    "YValue": 184,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 20:00",
+    "YValue": 41,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 21:00",
+    "YValue": 139,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/10 22:00",
+    "YValue": 102,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 08:00",
+    "YValue": 128,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 09:00",
+    "YValue": 69,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 10:00",
+    "YValue": 166,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 11:00",
+    "YValue": 85,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 12:00",
+    "YValue": 156,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 13:00",
+    "YValue": 137,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 14:00",
+    "YValue": 174,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 15:00",
+    "YValue": 167,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 16:00",
+    "YValue": 90,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 17:00",
+    "YValue": 171,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 18:00",
+    "YValue": 179,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 19:00",
+    "YValue": 184,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 20:00",
+    "YValue": 141,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 21:00",
+    "YValue": 87,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/11 22:00",
+    "YValue": 91,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 08:00",
+    "YValue": 66,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 09:00",
+    "YValue": 160,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 10:00",
+    "YValue": 83,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 11:00",
+    "YValue": 177,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 12:00",
+    "YValue": 158,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 13:00",
+    "YValue": 172,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 14:00",
+    "YValue": 108,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 15:00",
+    "YValue": 193,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 16:00",
+    "YValue": 35,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 17:00",
+    "YValue": 9,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 18:00",
+    "YValue": 40,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 19:00",
+    "YValue": 124,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 20:00",
+    "YValue": 172,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 21:00",
+    "YValue": 109,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/12 22:00",
+    "YValue": 156,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 08:00",
+    "YValue": 28,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 09:00",
+    "YValue": 112,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 10:00",
+    "YValue": 191,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 11:00",
+    "YValue": 164,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 12:00",
+    "YValue": 131,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 13:00",
+    "YValue": 139,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 14:00",
+    "YValue": 15,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 15:00",
+    "YValue": 125,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 16:00",
+    "YValue": 83,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 17:00",
+    "YValue": 164,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 18:00",
+    "YValue": 60,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 19:00",
+    "YValue": 9,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 20:00",
+    "YValue": 159,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 21:00",
+    "YValue": 140,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/13 22:00",
+    "YValue": 53,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 08:00",
+    "YValue": 95,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 09:00",
+    "YValue": 98,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 10:00",
+    "YValue": 82,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 11:00",
+    "YValue": 120,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 12:00",
+    "YValue": 166,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 13:00",
+    "YValue": 36,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 14:00",
+    "YValue": 38,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 15:00",
+    "YValue": 118,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 16:00",
+    "YValue": 22,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 17:00",
+    "YValue": 131,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 18:00",
+    "YValue": 147,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 19:00",
+    "YValue": 68,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 20:00",
+    "YValue": 52,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 21:00",
+    "YValue": 155,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/14 22:00",
+    "YValue": 96,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 08:00",
+    "YValue": 121,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 09:00",
+    "YValue": 133,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 10:00",
+    "YValue": 14,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 11:00",
+    "YValue": 7,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 12:00",
+    "YValue": 177,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 13:00",
+    "YValue": 35,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 14:00",
+    "YValue": 0,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 15:00",
+    "YValue": 26,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 16:00",
+    "YValue": 179,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 17:00",
+    "YValue": 71,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 18:00",
+    "YValue": 90,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 19:00",
+    "YValue": 56,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 20:00",
+    "YValue": 148,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 21:00",
+    "YValue": 37,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/15 22:00",
+    "YValue": 36,
+    "Placement": 4
+  },
+  {
+    "XValue": "2020/8/1 08:00",
+    "YValue": 48,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/1 09:00",
+    "YValue": 147,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/1 10:00",
+    "YValue": 161,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/1 11:00",
+    "YValue": 88,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/1 12:00",
+    "YValue": 95,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/1 13:00",
+    "YValue": 75,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/1 14:00",
+    "YValue": 30,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/1 15:00",
+    "YValue": 90,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/1 16:00",
+    "YValue": 83,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/1 17:00",
+    "YValue": 22,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/1 18:00",
+    "YValue": 45,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/1 19:00",
+    "YValue": 126,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/1 20:00",
+    "YValue": 181,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/1 21:00",
+    "YValue": 139,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/1 22:00",
+    "YValue": 160,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 08:00",
+    "YValue": 42,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 09:00",
+    "YValue": 104,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 10:00",
+    "YValue": 187,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 11:00",
+    "YValue": 94,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 12:00",
+    "YValue": 117,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 13:00",
+    "YValue": 131,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 14:00",
+    "YValue": 162,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 15:00",
+    "YValue": 28,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 16:00",
+    "YValue": 46,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 17:00",
+    "YValue": 47,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 18:00",
+    "YValue": 34,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 19:00",
+    "YValue": 176,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 20:00",
+    "YValue": 143,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 21:00",
+    "YValue": 64,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/2 22:00",
+    "YValue": 36,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 08:00",
+    "YValue": 184,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 09:00",
+    "YValue": 127,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 10:00",
+    "YValue": 16,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 11:00",
+    "YValue": 185,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 12:00",
+    "YValue": 116,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 13:00",
+    "YValue": 79,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 14:00",
+    "YValue": 160,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 15:00",
+    "YValue": 195,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 16:00",
+    "YValue": 139,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 17:00",
+    "YValue": 140,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 18:00",
+    "YValue": 31,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 19:00",
+    "YValue": 147,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 20:00",
+    "YValue": 57,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 21:00",
+    "YValue": 193,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/3 22:00",
+    "YValue": 82,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 08:00",
+    "YValue": 107,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 09:00",
+    "YValue": 87,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 10:00",
+    "YValue": 82,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 11:00",
+    "YValue": 50,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 12:00",
+    "YValue": 96,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 13:00",
+    "YValue": 86,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 14:00",
+    "YValue": 12,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 15:00",
+    "YValue": 177,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 16:00",
+    "YValue": 163,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 17:00",
+    "YValue": 164,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 18:00",
+    "YValue": 55,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 19:00",
+    "YValue": 136,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 20:00",
+    "YValue": 181,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 21:00",
+    "YValue": 75,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/4 22:00",
+    "YValue": 190,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 08:00",
+    "YValue": 40,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 09:00",
+    "YValue": 193,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 10:00",
+    "YValue": 37,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 11:00",
+    "YValue": 118,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 12:00",
+    "YValue": 122,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 13:00",
+    "YValue": 58,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 14:00",
+    "YValue": 94,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 15:00",
+    "YValue": 117,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 16:00",
+    "YValue": 7,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 17:00",
+    "YValue": 119,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 18:00",
+    "YValue": 41,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 19:00",
+    "YValue": 108,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 20:00",
+    "YValue": 17,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 21:00",
+    "YValue": 36,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/5 22:00",
+    "YValue": 161,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 08:00",
+    "YValue": 41,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 09:00",
+    "YValue": 120,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 10:00",
+    "YValue": 88,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 11:00",
+    "YValue": 142,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 12:00",
+    "YValue": 105,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 13:00",
+    "YValue": 172,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 14:00",
+    "YValue": 143,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 15:00",
+    "YValue": 158,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 16:00",
+    "YValue": 11,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 17:00",
+    "YValue": 97,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 18:00",
+    "YValue": 156,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 19:00",
+    "YValue": 72,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 20:00",
+    "YValue": 176,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 21:00",
+    "YValue": 193,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/6 22:00",
+    "YValue": 57,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 08:00",
+    "YValue": 25,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 09:00",
+    "YValue": 28,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 10:00",
+    "YValue": 128,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 11:00",
+    "YValue": 92,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 12:00",
+    "YValue": 163,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 13:00",
+    "YValue": 6,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 14:00",
+    "YValue": 39,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 15:00",
+    "YValue": 114,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 16:00",
+    "YValue": 168,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 17:00",
+    "YValue": 132,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 18:00",
+    "YValue": 34,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 19:00",
+    "YValue": 70,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 20:00",
+    "YValue": 145,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 21:00",
+    "YValue": 47,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/7 22:00",
+    "YValue": 148,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 08:00",
+    "YValue": 26,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 09:00",
+    "YValue": 70,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 10:00",
+    "YValue": 104,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 11:00",
+    "YValue": 48,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 12:00",
+    "YValue": 17,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 13:00",
+    "YValue": 55,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 14:00",
+    "YValue": 43,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 15:00",
+    "YValue": 15,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 16:00",
+    "YValue": 110,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 17:00",
+    "YValue": 186,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 18:00",
+    "YValue": 52,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 19:00",
+    "YValue": 142,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 20:00",
+    "YValue": 76,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 21:00",
+    "YValue": 42,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/8 22:00",
+    "YValue": 39,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 08:00",
+    "YValue": 77,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 09:00",
+    "YValue": 74,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 10:00",
+    "YValue": 21,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 11:00",
+    "YValue": 111,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 12:00",
+    "YValue": 76,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 13:00",
+    "YValue": 57,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 14:00",
+    "YValue": 144,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 15:00",
+    "YValue": 140,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 16:00",
+    "YValue": 52,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 17:00",
+    "YValue": 193,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 18:00",
+    "YValue": 14,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 19:00",
+    "YValue": 43,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 20:00",
+    "YValue": 33,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 21:00",
+    "YValue": 114,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/9 22:00",
+    "YValue": 133,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 08:00",
+    "YValue": 182,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 09:00",
+    "YValue": 21,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 10:00",
+    "YValue": 9,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 11:00",
+    "YValue": 118,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 12:00",
+    "YValue": 150,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 13:00",
+    "YValue": 191,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 14:00",
+    "YValue": 58,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 15:00",
+    "YValue": 183,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 16:00",
+    "YValue": 75,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 17:00",
+    "YValue": 62,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 18:00",
+    "YValue": 38,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 19:00",
+    "YValue": 31,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 20:00",
+    "YValue": 35,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 21:00",
+    "YValue": 169,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/10 22:00",
+    "YValue": 176,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 08:00",
+    "YValue": 50,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 09:00",
+    "YValue": 131,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 10:00",
+    "YValue": 68,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 11:00",
+    "YValue": 40,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 12:00",
+    "YValue": 103,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 13:00",
+    "YValue": 74,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 14:00",
+    "YValue": 10,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 15:00",
+    "YValue": 89,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 16:00",
+    "YValue": 37,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 17:00",
+    "YValue": 1,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 18:00",
+    "YValue": 7,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 19:00",
+    "YValue": 167,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 20:00",
+    "YValue": 119,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 21:00",
+    "YValue": 160,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/11 22:00",
+    "YValue": 86,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 08:00",
+    "YValue": 90,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 09:00",
+    "YValue": 119,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 10:00",
+    "YValue": 120,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 11:00",
+    "YValue": 77,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 12:00",
+    "YValue": 85,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 13:00",
+    "YValue": 111,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 14:00",
+    "YValue": 9,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 15:00",
+    "YValue": 182,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 16:00",
+    "YValue": 170,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 17:00",
+    "YValue": 125,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 18:00",
+    "YValue": 125,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 19:00",
+    "YValue": 23,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 20:00",
+    "YValue": 132,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 21:00",
+    "YValue": 159,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/12 22:00",
+    "YValue": 117,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 08:00",
+    "YValue": 94,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 09:00",
+    "YValue": 137,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 10:00",
+    "YValue": 135,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 11:00",
+    "YValue": 62,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 12:00",
+    "YValue": 198,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 13:00",
+    "YValue": 91,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 14:00",
+    "YValue": 112,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 15:00",
+    "YValue": 19,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 16:00",
+    "YValue": 156,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 17:00",
+    "YValue": 174,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 18:00",
+    "YValue": 16,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 19:00",
+    "YValue": 182,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 20:00",
+    "YValue": 5,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 21:00",
+    "YValue": 171,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/13 22:00",
+    "YValue": 107,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 08:00",
+    "YValue": 39,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 09:00",
+    "YValue": 120,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 10:00",
+    "YValue": 97,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 11:00",
+    "YValue": 73,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 12:00",
+    "YValue": 163,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 13:00",
+    "YValue": 15,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 14:00",
+    "YValue": 11,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 15:00",
+    "YValue": 136,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 16:00",
+    "YValue": 186,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 17:00",
+    "YValue": 22,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 18:00",
+    "YValue": 16,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 19:00",
+    "YValue": 94,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 20:00",
+    "YValue": 148,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 21:00",
+    "YValue": 119,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/14 22:00",
+    "YValue": 152,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 08:00",
+    "YValue": 66,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 09:00",
+    "YValue": 15,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 10:00",
+    "YValue": 187,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 11:00",
+    "YValue": 98,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 12:00",
+    "YValue": 71,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 13:00",
+    "YValue": 152,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 14:00",
+    "YValue": 64,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 15:00",
+    "YValue": 197,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 16:00",
+    "YValue": 9,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 17:00",
+    "YValue": 97,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 18:00",
+    "YValue": 110,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 19:00",
+    "YValue": 170,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 20:00",
+    "YValue": 157,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 21:00",
+    "YValue": 94,
+    "Placement": 5
+  },
+  {
+    "XValue": "2020/8/15 22:00",
+    "YValue": 192,
+    "Placement": 5
+  }
+]

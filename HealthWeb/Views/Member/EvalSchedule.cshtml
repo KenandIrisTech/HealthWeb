@@ -1,0 +1,56 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Navigations
+@using Syncfusion.EJ2.Schedule
+@{
+    ViewBag.Title = "EvalRadar";
+    if (ViewBag.PartialPage == null || !ViewBag.PartialPage)
+    {
+        Layout = "~/Views/Shared/_LayoutKinHealthMemberDemo.cshtml";
+    }
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        @Html.EJS().Schedule("schedule").Height("400px").EventClick("selected").Readonly(true).Width("100%").Views(v => { v.Option(View.Month).Add(); }).Height("90%").CellTemplate("#apptemplate").SelectedDate(DateTime.Today).Render()
+    </div>
+</div>
+
+<script id="apptemplate" type="text/template">
+    ${if (type === "monthCells")}
+    <div class="templatewrap">
+        ${getCellContent(data.date)}
+    </div>
+    ${/if}
+</script>
+<script type="text/javascript">
+
+    function getCellContent(date) {
+
+        if (date.getDay() == 3)
+            return '<div><span class="e-icons demo-icons demo-icon-sport"/><span class="e-control caption" style="color:blue;">運動</span></div>';
+
+        if ((date.getDate() % 10) == 0)
+            return '<div><span class="e-icons demo-icons demo-icon-doctor"/><span class="e-control caption" style="color:red;">復健</span></div>';
+
+        return '';
+    }
+
+    function selected(e) {
+        console.log(e);
+    }
+</script>
+
+<style type="text/css">
+    .templatewrap {
+    }
+
+        .templatewrap .e-icons, .templatewrap .caption {
+            font-size: 20px;
+            margin-right: 2px;
+            
+        }
+
+        .templatewrap .caption {
+        }
+</style>
+

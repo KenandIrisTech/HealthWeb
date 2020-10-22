@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ONELABModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="M_LOGIN">
+          <Key>
+            <PropertyRef Name="LOGIN_ID" />
+          </Key>
+          <Property Name="LOGIN_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PARTNER_ID" Type="int" Nullable="false" />
+          <Property Name="UUID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="LOGIN_KIND_ID" Type="int" Nullable="false" />
+          <Property Name="MEDIA_KIND_ID" Type="int" Nullable="false" />
+          <Property Name="LOGIN_NAME" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PASSWORD_HASH" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="REQUIRED_CHANGE_PASSWORD" Type="bit" Nullable="false" />
+          <Property Name="PASSWORD_CHANGED_TIME" Type="datetime" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="100" />
+          <Property Name="EMAIL_NOTIFIED_TIME" Type="datetime" />
+          <Property Name="EMAIL_CONFIRMED" Type="bit" Nullable="false" />
+          <Property Name="PHONE_NUMBER" Type="varchar" MaxLength="50" />
+          <Property Name="SMS_NOTIFIED_TIME" Type="datetime" />
+          <Property Name="SMS_CONFIRMED" Type="bit" Nullable="false" />
+          <Property Name="EXTERNAL_USER_UUID" Type="varchar" MaxLength="255" />
+          <Property Name="EXTERNAL_NOTIFIED_TIME" Type="datetime" />
+          <Property Name="EXTERNAL_CONFIRMED" Type="bit" Nullable="false" />
+          <Property Name="TWO_FACTOR_ENABLED" Type="bit" Nullable="false" />
+          <Property Name="LOCKOUT_END_TIME" Type="datetime" />
+          <Property Name="LOCKOUT_ENABLED" Type="bit" Nullable="false" />
+          <Property Name="ACCESS_FAILED_COUNT" Type="int" Nullable="false" />
+          <Property Name="IS_ONLINE" Type="bit" Nullable="false" />
+          <Property Name="IS_ACTIVE" Type="bit" Nullable="false" />
+          <Property Name="LANGUAGE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="LAST_LOGIN_TIME" Type="datetime" />
+          <Property Name="LAST_LOGOFF_TIME" Type="datetime" />
+          <Property Name="CREATED_USER_ID" Type="int" Nullable="false" />
+          <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+          <Property Name="UPDATED_USER_ID" Type="int" Nullable="false" />
+          <Property Name="UPDATED_TIME" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="M_USER">
+          <Key>
+            <PropertyRef Name="USER_ID" />
+          </Key>
+          <Property Name="USER_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LOGIN_ID" Type="int" />
+          <Property Name="ID" Type="varchar" MaxLength="255" />
+          <Property Name="TOKEN" Type="varchar" MaxLength="255" />
+          <Property Name="REFRESH_TOKEN" Type="varchar" MaxLength="255" />
+          <Property Name="EXPIRES_IN" Type="datetime" />
+          <Property Name="NAME" Type="varchar" MaxLength="50" />
+          <Property Name="NICK_NAME" Type="varchar" MaxLength="50" />
+          <Property Name="LAST_NAME" Type="varchar" MaxLength="50" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="100" />
+          <Property Name="GENDER" Type="char" MaxLength="1" />
+          <Property Name="BIRTHDAY" Type="date" />
+          <Property Name="PICTURE_URL" Type="varchar" MaxLength="255" />
+          <Property Name="LOGIN_PROVIDER" Type="int" />
+        </EntityType>
+        <EntityContainer Name="ONELABModelStoreContainer">
+          <EntitySet Name="M_LOGIN" EntityType="Self.M_LOGIN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="M_USER" EntityType="Self.M_USER" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ONELABModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="M_LOGIN">
+          <Key>
+            <PropertyRef Name="LOGIN_ID" />
+          </Key>
+          <Property Name="LOGIN_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PARTNER_ID" Type="Int32" Nullable="false" />
+          <Property Name="UUID" Type="Guid" Nullable="false" />
+          <Property Name="LOGIN_KIND_ID" Type="Int32" Nullable="false" />
+          <Property Name="MEDIA_KIND_ID" Type="Int32" Nullable="false" />
+          <Property Name="LOGIN_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PASSWORD_HASH" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="REQUIRED_CHANGE_PASSWORD" Type="Boolean" Nullable="false" />
+          <Property Name="PASSWORD_CHANGED_TIME" Type="DateTime" Precision="3" />
+          <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EMAIL_NOTIFIED_TIME" Type="DateTime" Precision="3" />
+          <Property Name="EMAIL_CONFIRMED" Type="Boolean" Nullable="false" />
+          <Property Name="PHONE_NUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SMS_NOTIFIED_TIME" Type="DateTime" Precision="3" />
+          <Property Name="SMS_CONFIRMED" Type="Boolean" Nullable="false" />
+          <Property Name="EXTERNAL_USER_UUID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="EXTERNAL_NOTIFIED_TIME" Type="DateTime" Precision="3" />
+          <Property Name="EXTERNAL_CONFIRMED" Type="Boolean" Nullable="false" />
+          <Property Name="TWO_FACTOR_ENABLED" Type="Boolean" Nullable="false" />
+          <Property Name="LOCKOUT_END_TIME" Type="DateTime" Precision="3" />
+          <Property Name="LOCKOUT_ENABLED" Type="Boolean" Nullable="false" />
+          <Property Name="ACCESS_FAILED_COUNT" Type="Int32" Nullable="false" />
+          <Property Name="IS_ONLINE" Type="Boolean" Nullable="false" />
+          <Property Name="IS_ACTIVE" Type="Boolean" Nullable="false" />
+          <Property Name="LANGUAGE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LAST_LOGIN_TIME" Type="DateTime" Precision="3" />
+          <Property Name="LAST_LOGOFF_TIME" Type="DateTime" Precision="3" />
+          <Property Name="CREATED_USER_ID" Type="Int32" Nullable="false" />
+          <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UPDATED_USER_ID" Type="Int32" Nullable="false" />
+          <Property Name="UPDATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="ONELABEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="M_LOGIN" EntityType="Self.M_LOGIN" />
+          <EntitySet Name="M_USER" EntityType="ONELABModel.M_USER" />
+        </EntityContainer>
+        <EntityType Name="M_USER">
+          <Key>
+            <PropertyRef Name="USER_ID" />
+          </Key>
+          <Property Name="USER_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LOGIN_ID" Type="Int32" />
+          <Property Name="ID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="TOKEN" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="REFRESH_TOKEN" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="EXPIRES_IN" Type="DateTime" Precision="3" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NICK_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LAST_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="GENDER" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="BIRTHDAY" Type="DateTime" Precision="0" />
+          <Property Name="PICTURE_URL" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="LOGIN_PROVIDER" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ONELABModelStoreContainer" CdmEntityContainer="ONELABEntities">
+          <EntitySetMapping Name="M_LOGIN">
+            <EntityTypeMapping TypeName="ONELABModel.M_LOGIN">
+              <MappingFragment StoreEntitySet="M_LOGIN">
+                <ScalarProperty Name="LOGIN_ID" ColumnName="LOGIN_ID" />
+                <ScalarProperty Name="PARTNER_ID" ColumnName="PARTNER_ID" />
+                <ScalarProperty Name="UUID" ColumnName="UUID" />
+                <ScalarProperty Name="LOGIN_KIND_ID" ColumnName="LOGIN_KIND_ID" />
+                <ScalarProperty Name="MEDIA_KIND_ID" ColumnName="MEDIA_KIND_ID" />
+                <ScalarProperty Name="LOGIN_NAME" ColumnName="LOGIN_NAME" />
+                <ScalarProperty Name="PASSWORD_HASH" ColumnName="PASSWORD_HASH" />
+                <ScalarProperty Name="REQUIRED_CHANGE_PASSWORD" ColumnName="REQUIRED_CHANGE_PASSWORD" />
+                <ScalarProperty Name="PASSWORD_CHANGED_TIME" ColumnName="PASSWORD_CHANGED_TIME" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="EMAIL_NOTIFIED_TIME" ColumnName="EMAIL_NOTIFIED_TIME" />
+                <ScalarProperty Name="EMAIL_CONFIRMED" ColumnName="EMAIL_CONFIRMED" />
+                <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+                <ScalarProperty Name="SMS_NOTIFIED_TIME" ColumnName="SMS_NOTIFIED_TIME" />
+                <ScalarProperty Name="SMS_CONFIRMED" ColumnName="SMS_CONFIRMED" />
+                <ScalarProperty Name="EXTERNAL_USER_UUID" ColumnName="EXTERNAL_USER_UUID" />
+                <ScalarProperty Name="EXTERNAL_NOTIFIED_TIME" ColumnName="EXTERNAL_NOTIFIED_TIME" />
+                <ScalarProperty Name="EXTERNAL_CONFIRMED" ColumnName="EXTERNAL_CONFIRMED" />
+                <ScalarProperty Name="TWO_FACTOR_ENABLED" ColumnName="TWO_FACTOR_ENABLED" />
+                <ScalarProperty Name="LOCKOUT_END_TIME" ColumnName="LOCKOUT_END_TIME" />
+                <ScalarProperty Name="LOCKOUT_ENABLED" ColumnName="LOCKOUT_ENABLED" />
+                <ScalarProperty Name="ACCESS_FAILED_COUNT" ColumnName="ACCESS_FAILED_COUNT" />
+                <ScalarProperty Name="IS_ONLINE" ColumnName="IS_ONLINE" />
+                <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+                <ScalarProperty Name="LANGUAGE" ColumnName="LANGUAGE" />
+                <ScalarProperty Name="LAST_LOGIN_TIME" ColumnName="LAST_LOGIN_TIME" />
+                <ScalarProperty Name="LAST_LOGOFF_TIME" ColumnName="LAST_LOGOFF_TIME" />
+                <ScalarProperty Name="CREATED_USER_ID" ColumnName="CREATED_USER_ID" />
+                <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+                <ScalarProperty Name="UPDATED_USER_ID" ColumnName="UPDATED_USER_ID" />
+                <ScalarProperty Name="UPDATED_TIME" ColumnName="UPDATED_TIME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="M_USER">
+            <EntityTypeMapping TypeName="ONELABModel.M_USER">
+              <MappingFragment StoreEntitySet="M_USER">
+                <ScalarProperty Name="LOGIN_PROVIDER" ColumnName="LOGIN_PROVIDER" />
+                <ScalarProperty Name="PICTURE_URL" ColumnName="PICTURE_URL" />
+                <ScalarProperty Name="BIRTHDAY" ColumnName="BIRTHDAY" />
+                <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+                <ScalarProperty Name="NICK_NAME" ColumnName="NICK_NAME" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="EXPIRES_IN" ColumnName="EXPIRES_IN" />
+                <ScalarProperty Name="REFRESH_TOKEN" ColumnName="REFRESH_TOKEN" />
+                <ScalarProperty Name="TOKEN" ColumnName="TOKEN" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LOGIN_ID" ColumnName="LOGIN_ID" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,460 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Navigations
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - ONE TAIWAN</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @{
+        var menuList = new List<object>()
+{
+            new {text="首頁", iconCss="demo-icons demo-icon-home", url="/Member" },
+            new {text="長者個人資料管理", iconCss="demo-icons demo-icon-user", url="/Member/Evaluation" },
+            new {text="活動", iconCss="demo-icons demo-icon-event", count="2"},
+            new {text="健康提醒", iconCss="demo-icons demo-icon-alert", count="5", id="healthReminder" },
+            new {text="系統設定", iconCss="demo-icons demo-icon-settings" },
+            new {text="重要資訊", iconCss="demo-icons demo-icon-information", count="99+" },
+            new {text="國民健康促進管理平台", iconCss="demo-icons demo-icon-cloud", url="/" },
+            new {text="離開", iconCss="demo-icons demo-icon-exit" },
+        };
+    }
+
+    @{
+        var menuItems = new List<object>()
+{
+            new {Category = "首頁" , Items = new List<object>(){
+                    new { Category="最新重要訊息"},
+                    new { Category="最新活動"},
+                    new { Category="個人化最新消息與提醒"},
+            }},
+            new {Category = "全人健康概觀與提醒", Items = new List<object>(){
+                    new { Category="整合式個人健康狀態雷達圖",  Url="/Member/Evaluation/3"},
+                    new { Category="個人健康資訊提醒", Url="/Member/Evaluation/6"},
+                    new { Category="個人健康目標達成狀況", Url="/Member/Evaluation/2"},
+                    new { Category="個人健康風險資訊與提醒", Url="/Member/Evaluation/5"},
+                    new { Category="其他", Url="/Member/Evaluation/1"},
+
+                } },
+            new {Category = "醫療健康紀錄與管理", Items = new List<object>(){
+                    new { Category="個人化醫療健康資訊與紀錄概觀"},
+                    new { Category="健康檢查資訊管理"},
+                    new { Category="個人健康存摺"},
+                    new { Category="醫療健康資訊管理"},
+                    new { Category="個人化醫療健康資訊推播管理"},
+                    new { Category="其他"},
+
+                } },
+             new {Category = "健康量測與評估", Items = new List<object>(){
+                    new { Category="整合式健康量測與評估概觀"},
+                    new { Category="健康與疾病評估"},
+                    new { Category="癌篩資訊管理"},
+                    new { Category="健康量測與檢測資料"},
+                    new { Category="健康量測與評估決策支援管理"},
+                    new { Category="其他"},
+
+                } },
+             new {Category = "營養評估與管理", Items = new List<object>(){
+                    new { Category="整合式營養評估概觀"},
+                    new { Category="營養評估"},
+                    new { Category="營養評估資訊管理"},
+                    new { Category="營養評估決策支援管理"},
+                    new { Category="個人化營養健康資訊推播管理"},
+                    new { Category="其他"},
+
+                } },
+             new {Category = "健康促進課程與活動管理", Items = new List<object>(){
+                    new { Category="整合式健康促進課程與活動概觀"},
+                    new { Category="個人化健康促進課程與活動資訊管理"},
+                    new { Category="預防及延緩失能課程管理"},
+                    new { Category="健康促進活動"},
+                    new { Category="其他"},
+
+                } },
+             //new {Category = "社會互動與社會參與管理", Items = new List<object>(){
+             //       new { Category="時間銀行"},
+             //       new { Category="志工時數管理"},
+             //       new { Category="十分鐘照護圈"},
+             //       new { Category="其他"},
+
+             //   } },
+             //new {Category = "健康識能與評估", Items = new List<object>(){
+             //       new { Category="認識疾病與評估"},
+             //       new { Category="衛教資訊與識能評估"},
+             //       new { Category="個人化衛教電子書"},
+             //       new { Category="其他"},
+
+             //   } },
+             //new {Category = "個人健康自主管理與決策支援", Items = new List<object>(){
+             //       new { Category="個人健康資訊提醒設定"},
+             //       new { Category="個人健康目標管理"},
+             //       new { Category="個人健康風險管理"},
+             //       new { Category="線上諮詢"},
+             //       new { Category="其他"},
+
+             //   } },
+             //new {Category = "健康資訊分享與管理", Items = new List<object>(){
+             //       new { Category="個人健康資訊分享與授權管理"},
+             //       new { Category="家人/好友健康資訊分享與管理"},
+             //       new { Category="個人健康紀錄對帳單"},
+             //       new { Category="其他"},
+
+             //   } },
+             //new {Category = "其他健康促進微服務管理", Items = new List<object>(){
+             //       new { Category="查詢與管理健康促進微服務應用程式"},
+             //       new { Category="家人/上傳/介接客製化健康促進微服務應用程式"},
+
+             //   } },
+
+        };
+
+    }
+
+    @{
+        var menuItemsSecond = new List<object>()
+{
+            //new {Category = "首頁" , Items = new List<object>(){
+            //        new { Category="最新重要訊息"},
+            //        new { Category="最新活動"},
+            //        new { Category="個人化最新消息與提醒"},
+            //}},
+            //new {Category = "全人健康<br>概觀與提醒", Items = new List<object>(){
+            //        new { Category="整合式個人健康狀態雷達圖"},
+            //        new { Category="個人健康資訊提醒"},
+            //        new { Category="個人健康目標達成狀況"},
+            //        new { Category="個人健康風險資訊與提醒"},
+            //        new { Category="其他"},
+
+            //    } },
+            //new {Category = "醫療健康紀錄與管理", Items = new List<object>(){
+            //        new { Category="個人化醫療健康資訊與紀錄概觀"},
+            //        new { Category="健康檢查資訊管理"},
+            //        new { Category="個人健康存摺"},
+            //        new { Category="醫療健康資訊管理"},
+            //        new { Category="個人化醫療健康資訊推播管理"},
+            //        new { Category="其他"},
+
+            //    } },
+            // new {Category = "健康量測與評估", Items = new List<object>(){
+            //        new { Category="整合式健康量測與評估概觀"},
+            //        new { Category="健康與疾病評估"},
+            //        new { Category="癌篩資訊管理"},
+            //        new { Category="健康量測與檢測資料"},
+            //        new { Category="健康量測與評估決策支援管理"},
+            //        new { Category="其他"},
+
+            //    } },
+            // new {Category = "營養評估與管理", Items = new List<object>(){
+            //        new { Category="整合式營養評估概觀"},
+            //        new { Category="營養評估"},
+            //        new { Category="營養評估資訊管理"},
+            //        new { Category="營養評估決策支援管理"},
+            //        new { Category="個人化營養健康資訊推播管理"},
+            //        new { Category="其他"},
+
+            //    } },
+            // new {Category = "健康促進課程與活動管理", Items = new List<object>(){
+            //        new { Category="整合式健康促進課程與活動概觀"},
+            //        new { Category="個人化健康促進課程與活動資訊管理"},
+            //        new { Category="預防及延緩失能課程管理"},
+            //        new { Category="健康促進活動"},
+            //        new { Category="其他"},
+
+            //    } },
+
+
+
+             new {Category = "社會互動與社會參與管理", Items = new List<object>(){
+                    new { Category="時間銀行"},
+                    new { Category="志工時數管理"},
+                    new { Category="十分鐘照護圈"},
+                    new { Category="其他"},
+
+                } },
+             new {Category = "健康識能與評估", Items = new List<object>(){
+                    new { Category="認識疾病與評估"},
+                    new { Category="衛教資訊與識能評估"},
+                    new { Category="個人化衛教電子書"},
+                    new { Category="其他"},
+
+                } },
+             new {Category = "個人健康自主管理與決策支援", Items = new List<object>(){
+                    new { Category="個人健康資訊提醒設定"},
+                    new { Category="個人健康目標管理"},
+                    new { Category="個人健康風險管理"},
+                    new { Category="線上諮詢"},
+                    new { Category="其他"},
+
+                } },
+             new {Category = "健康資訊分享與管理", Items = new List<object>(){
+                    new { Category="個人健康資訊分享與授權管理"},
+                    new { Category="家人/好友健康資訊分享與管理"},
+                    new { Category="個人健康紀錄對帳單"},
+                    new { Category="其他"},
+
+                } },
+             new {Category = "其他健康促進微服務管理", Items = new List<object>(){
+                    new { Category="查詢與管理健康促進微服務應用程式"},
+                    new { Category="家人/上傳/介接客製化健康促進微服務應用程式"},
+
+                } },
+
+        };
+
+    }
+
+    <div class="container navi-content">
+        <div class="row">
+            <div class="col-lg-12" style="background-color:#95bb32;width:100%;text-align:center">
+                @Html.EJS().Menu("menuMain").Items(menuItems).Template("#mainMenuTemplate").Fields(m =>
+              {
+                  m.Text(new string[] { "Category" }).Children(new string[] { "Items" });
+              }).Orientation(Orientation.Horizontal).CssClass("ki-main-menu").Render()
+                @Html.EJS().Menu("menuMainSecond").Items(menuItemsSecond).Template("#mainMenuTemplate").Fields(m =>
+             {
+                 m.Text(new string[] { "Category" }).Children(new string[] { "Items" });
+             }).Orientation(Orientation.Horizontal).CssClass("ki-main-menu").Render()
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-2">
+
+                <div style="padding-left:30px;width:200px;text-align:center;margin:0;padding:0;">
+                    <div style="display:inline-block; ">
+                        <img src="~/Content/Images/logo.png" height="140" />
+                    </div>
+                    <div style="display:inline-block; text-align:left;height:140px;vertical-align:middle;padding-top:50px">
+                        <span class="e-control" style="font-size:20px; color:#95bb32; font-weight:bolder; ">國民健康<br></span>
+                        <span class="e-control" style="font-size:20px; color:#95bb32; font-weight:bolder; ">促進管理平台</span>
+                    </div>
+                    @*<img src="~/Content/Images/HealthLogo.png" width="200" height="140" style="padding:10px;" />*@
+                </div>
+                <div>
+                    @*@Html.EJS().Menu("menuLeft").Items(menuList).Template("#menuTemplate").Orientation(Orientation.Vertical).Render()*@
+                    @Html.EJS().Menu("menuLeft").Items(menuList).Template("#menuTemplate").Select("menuSelected").Orientation(Orientation.Vertical).Render()
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div style="width:100%;height:90%">
+                    @Html.EJS().Menu("menuUI").CssClass("").Items(m =>
+                 {
+                    m.IconCss("demo-icons demo-icon-home").Id("mnuHome").Url("/Member").Add();
+                    m.IconCss("demo-icons demo-icon-backward").Id("mnuBackward").Add();
+                    m.IconCss("demo-icons demo-icon-forward").Id("mnuForward").Add();
+                }).Orientation(Orientation.Horizontal).Select("menuUI_selected").Render()
+                </div>
+                <div class="container body-content" style="width:100%;height:90%">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="row">
+
+
+                </div>
+
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script id="menuTemplate" type="text/template">
+        ${if(text)}
+        ${if(iconCss)}
+        <div>
+            <span class="e-menu-icon ${iconCss}"></span>
+            ${if(url)}
+            <a class="e-menu-text e-menu-url" href="${url}">${text}</a>
+            ${else}
+            ${text}
+            ${/if}
+            ${if(count)}
+            <span class="e-badge e-badge-warning e-badge-ghost" style="margin-left:10px">${count}</span>
+            ${/if}
+        </div>
+        ${else}
+        ${text}
+        ${/if}
+        ${else}
+        ${/if}
+    </script>
+    <script id="mainMenuTemplate" type="text/template">
+        ${if(Category)}
+        ${if(Url)}
+        <a class="e-menu-text e-menu-url" href="${Url}">${Category}</a>
+        ${else}
+        ${Category}
+        ${/if}
+        ${else}
+        <div class="container">
+            <div class="row row-cols-lg-12">
+                ${for(item of SubItems)}
+                <div class="col-lg-1" style="width:auto">
+                    <ul>
+                        <li class="ki-menu-category">
+                            ${item.Text}
+                            ${if(item.MenuItems)}
+                            <ul>
+                                ${for(menuItem of item.MenuItems)}
+                                <li class="ki-menu-item">${menuItem.Text}</li>
+                                ${/for}
+                            </ul>
+                            ${/if}
+                        </li>
+                    </ul>
+                </div>
+                ${/for}
+            </div>
+        </div>
+        ${/if}
+    </script>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/syncfusion")
+
+    <script type="text/javascript">
+        loadCultureFiles('zh-Hant');
+        //if ((aa === undefined) && (bb == undefined)){
+
+        //}
+        function menuLeft_select() {
+            sidebarMenuInstance.toggle();
+        }
+
+        function menuUI_selected(e) {
+            switch (e.item.id) {
+                case "mnuBackward":
+                    window.history.go(-1);
+                    break;
+                case "mnuForward":
+                    window.history.go(1);
+                    break;
+            }
+        }
+
+        function menuSelected(e) {
+            switch (e.item.id) {
+                case 'healthReminder':
+                    showReminder();
+                    break;
+            }
+        }
+
+        function showReminder() {
+            viewTools.showToast({
+                title: '健康小幫手',
+                timeOut: 0,
+                content: String.format("<div><span class='demo-icons demo-icon-doctor'></span>提醒您 2020-08-20 要去醫院接受復健</div>"),
+            });
+            viewTools.showToast({
+                title: '健康小教練',
+                content: String.format("<div><span class='demo-icons demo-icon-sport'></span>提醒您 2020-08-19 要去健康中心 運動 30分鐘</div>"),
+            });
+            viewTools.showToast({
+                title: '溫馨小護士',
+                content: String.format("<div><span class='demo-icons demo-icon-nurse'></span>提醒您 您這週的健康步數明顯不足，請再努力加強健康步數到 12,000 步</div>"),
+            });
+        }
+
+    </script>
+    @Html.EJS().ScriptManager()
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        var sidebarMenuInstance;
+
+        $(function () {
+            //sidebarMenuInstance = document.getElementById('sidebarMenu').ej2_instances[0];
+        });
+
+    </script>
+
+
+</body>
+</html>
+<style type="text/css">
+    .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] {
+        height: auto;
+        padding: 0;
+
+        /*max-width: 100%;*/
+    }
+
+        .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] .container .col-lg-1 {
+            /*border-left:solid 1px #ccc;*/
+        }
+
+        .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul li ul {
+            padding-left: 5px;
+        }
+
+        .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'].e-focused {
+            background-color: transparent;
+            outline-color: transparent;
+            pointer-events: none;
+        }
+
+        .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li {
+            pointer-events: auto;
+            cursor: pointer;
+            font-size: 1.1em;
+           
+        }
+
+            .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li.ki-menu-category {
+                /*font-size:1.2em;*/
+                border: solid 1px transparent;
+                padding: 5px;
+                color: #0827a2;
+            }
+
+                .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li.ki-menu-category:hover {
+                    cursor: pointer;
+                    background-color: #8da356;
+                    border: solid 1px #a0a0a0;
+                    border-radius: 5px;
+                    font-weight: 800;
+                }
+
+            .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li.ki-menu-item {
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+                .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li.ki-menu-item:hover {
+                    cursor: pointer;
+                    background-color: #c9d9a0;
+                }
+
+
+    .e-menu-wrapper ul {
+        font-size: 15px !important;
+        word-break:break-all;
+        
+    }
+
+    .ki-main-menu {
+        background-color: #95bb32 !important;
+
+    }
+</style>

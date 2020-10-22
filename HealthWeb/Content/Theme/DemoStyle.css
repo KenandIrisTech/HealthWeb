@@ -1,0 +1,96 @@
+﻿body {
+}
+
+
+@font-face {
+    font-family: "DemoFonts";
+    src: url(/Content/Fonts/DemoFonts.ttf);
+}
+[class^="sf-icon-"], [class*=" sf-icon-"], .demo-icons {
+    font-family: DemoFonts !important;
+    speak: none;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.demo-icon-home::before {
+    content: "\e701";
+}
+.demo-icon-user::before {
+    content: "\e700";
+}
+.demo-icon-event::before {
+    content: "\e702";
+}
+.demo-icon-alert::before {
+    content: "\e703";
+}
+.demo-icon-settings::before {
+    content: "\e704";
+}
+.demo-icon-information::before {
+    content: "\e705";
+}
+.demo-icon-exit::before {
+    content: "\e706";
+}
+.demo-icon-hambuger::before {
+    content: "\e707";
+}
+
+.demo-icon-temperature::before {
+    content: "\e708";
+}
+.demo-icon-pressure::before {
+    content: "\e709";
+}
+.demo-icon-sugar::before {
+    content: "\e70a";
+}
+.demo-icon-sport::before {
+    content: "\e70b";
+}
+.demo-icon-cloud::before {
+    content: "\e70c";
+}
+.demo-icon-blood::before {
+    content: "\e70d";
+}
+.demo-icon-measurement::before {
+    content: "\e70e";
+}
+.demo-icon-forward::before {
+    content: "\e710";
+}
+.demo-icon-backward::before {
+    content: "\e70f";
+}
+.demo-icon-doctor::before {
+    content: "\e711";
+}
+.demo-icon-nurse::before {
+    content: "\e712";
+}
+.demo-icon-data-transfer::before {
+    content: "\e713";
+}
+.demo-icon-placement::before {
+    content: "\e714";
+}
+.demo-theme-background {
+    background-color: #4c952d !important;
+}
+
+.demo-theme-background .e-menu-icon, .demo-theme-background .e-menu-item  {
+    color:#fff!important;
+}
+
+.demo-theme-background .e-menu-item.e-focused, .demo-theme-background .e-menu-item.e-selected {
+    background-color: #3a6f24 !important;
+}

@@ -1,0 +1,258 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Navigations
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - ONE TAIWAN</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @{
+        var menuList = new List<object>()
+{
+            new {text="首頁", iconCss="demo-icons demo-icon-home", url="/DCloud" },
+            new {text="傳輸 流量分析", iconCss="demo-icons demo-icon-data-transfer", url="/DCloud/DCloudTraffic" },
+            new {text="量測設備 流量分析", iconCss="demo-icons demo-icon-temperature", url="/DCloud/EquipmentTraffic" },
+            new {text="場域     流量分析", iconCss="demo-icons demo-icon-placement", url="/DCloud/PlacementTraffic"  },
+            new {text="離開", iconCss="demo-icons demo-icon-exit" },
+        };
+    }
+
+    <div class="container navi-content">
+        <div class="row">
+            <div class="col-lg-2">
+                <div style="padding:0;width:200px;text-align:center;margin:0;padding:0;">
+                    <div style="display:inline-block; ">
+                        <img src="~/Content/Images/logo.png" height="80" />
+                    </div>
+                    <div style="display:inline-block; text-align:left;height:80px;vertical-align:middle;padding-top:15px">
+                        <span class="e-control" style="font-size:20px; color:#95bb32; font-weight:bolder; ">國民健康<br></span>
+                        <span class="e-control" style="font-size:20px; color:#95bb32; font-weight:bolder; ">促進管理平台</span>
+                    </div>
+                </div>
+                <div>
+                    @Html.EJS().Menu("menuLeft").Items(menuList).Template("#menuTemplate").Select("menuSelected").Orientation(Orientation.Vertical).Render()
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div style="background-color:#95bb32;height:80px;text-align:center;font-size:3em;color:white">
+                    <span style="position:relative;top:10px;">設備雲 流量分析/查詢</span>
+                </div>
+                <div class="container body-content" style="width:100%;height:90%">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="row">
+
+
+                </div>
+
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script id="menuTemplate" type="text/template">
+        ${if(text)}
+        ${if(iconCss)}
+        <div>
+            <span class="e-menu-icon ${iconCss}"></span>
+            ${if(url)}
+            <a class="e-menu-text e-menu-url" href="${url}">${text}</a>
+            ${else}
+            ${text}
+            ${/if}
+            ${if(count)}
+            <span class="e-badge e-badge-warning e-badge-ghost" style="margin-left:10px">${count}</span>
+            ${/if}
+        </div>
+        ${else}
+        ${text}
+        ${/if}
+        ${else}
+        ${/if}
+    </script>
+    <script id="mainMenuTemplate" type="text/template">
+        ${if(Category)}
+        ${if(Url)}
+        <a class="e-menu-text e-menu-url" href="${Url}">${Category}</a>
+        ${else}
+        ${Category}
+        ${/if}
+        ${else}
+        <div class="container">
+            <div class="row row-cols-lg-12">
+                ${for(item of SubItems)}
+                <div class="col-lg-1" style="width:auto">
+                    <ul>
+                        <li class="ki-menu-category">
+                            ${item.Text}
+                            ${if(item.MenuItems)}
+                            <ul>
+                                ${for(menuItem of item.MenuItems)}
+                                <li class="ki-menu-item">${menuItem.Text}</li>
+                                ${/for}
+                            </ul>
+                            ${/if}
+                        </li>
+                    </ul>
+                </div>
+                ${/for}
+            </div>
+        </div>
+        ${/if}
+    </script>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/syncfusion")
+
+    <script type="text/javascript">
+        loadCultureFiles('zh-Hant');
+        //if ((aa === undefined) && (bb == undefined)){
+
+        //}
+        function menuLeft_select() {
+            sidebarMenuInstance.toggle();
+        }
+
+        function menuUI_selected(e) {
+            switch (e.item.id) {
+                case "mnuBackward":
+                    window.history.go(-1);
+                    break;
+                case "mnuForward":
+                    window.history.go(1);
+                    break;
+            }
+        }
+
+        function menuSelected(e) {
+            switch (e.item.id) {
+                case 'healthReminder':
+                    showReminder();
+                    break;
+            }
+        }
+
+        function showReminder() {
+            viewTools.showToast({
+                title: '健康小幫手',
+                timeOut: 0,
+                content: String.format("<div><span class='demo-icons demo-icon-doctor'></span>提醒您 2020-08-20 要去醫院接受復健</div>"),
+            });
+            viewTools.showToast({
+                title: '健康小教練',
+                content: String.format("<div><span class='demo-icons demo-icon-sport'></span>提醒您 2020-08-19 要去健康中心 運動 30分鐘</div>"),
+            });
+            viewTools.showToast({
+                title: '溫馨小護士',
+                content: String.format("<div><span class='demo-icons demo-icon-nurse'></span>提醒您 您這週的健康步數明顯不足，請再努力加強健康步數到 12,000 步</div>"),
+            });
+        }
+
+    </script>
+    @RenderSection("b4scripts", required: false)
+    @Html.EJS().ScriptManager()
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        var sidebarMenuInstance;
+
+        $(function () {
+            //sidebarMenuInstance = document.getElementById('sidebarMenu').ej2_instances[0];
+        });
+
+    </script>
+
+
+</body>
+</html>
+<style type="text/css">
+    .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] {
+        height: auto;
+        padding: 0;
+
+        /*max-width: 100%;*/
+    }
+
+    .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] .container .col-lg-1 {
+        /*border-left:solid 1px #ccc;*/
+    }
+
+    .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul li ul {
+        padding-left: 5px;
+    }
+
+    .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'].e-focused {
+        background-color: transparent;
+        outline-color: transparent;
+        pointer-events: none;
+    }
+
+    .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li {
+        pointer-events: auto;
+        cursor: pointer;
+        font-size: 1.1em;
+           
+    }
+
+    .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li.ki-menu-category {
+        /*font-size:1.2em;*/
+        border: solid 1px transparent;
+        padding: 5px;
+        color: #0827a2;
+    }
+
+    .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li.ki-menu-category:hover {
+        cursor: pointer;
+        background-color: #8da356;
+        border: solid 1px #a0a0a0;
+        border-radius: 5px;
+        font-weight: 800;
+    }
+
+    .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li.ki-menu-item {
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li.ki-menu-item:hover {
+        cursor: pointer;
+        background-color: #c9d9a0;
+    }
+
+
+    .e-menu-wrapper ul {
+        font-size: 15px !important;
+        word-break:break-all;
+        
+    }
+
+    .ki-main-menu {
+        background-color: #95bb32 !important;
+    }
+
+    #menuLeft {
+        padding: 5px;
+        width:195px;
+    }
+</style>

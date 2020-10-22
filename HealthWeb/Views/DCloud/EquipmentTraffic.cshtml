@@ -1,0 +1,91 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Charts
+@{
+    ViewBag.Title = "DCloudTraffic";
+    Layout = "~/Views/Shared/_LayoutKinHealthDcloudDemo.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-2" style="text-align:right">
+        @Html.Label("日期範圍")
+    </div>
+    <div class="col-lg-3">
+        @Html.EJS().DateRangePicker("dateRange").Placeholder("日期範圍"
+            ).StartDate("2020-8-1").EndDate("2020-8-7").Format("yyyy-MM-dd").Separator(" 到 "
+            ).StrictMode(true).Change("changeDateRange").Render()
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        @Html.EJS().Chart("container").Series(series =>
+        {
+            series.SegmentAxis(Segment.Y).Name("溫度計").LegendShape(LegendShape.Diamond).
+            Type(ChartSeriesType.Line).Width(1.5).XName("XValue").YName("YValue").Add();
+            series.SegmentAxis(Segment.Y).Name("血壓計").LegendShape(LegendShape.Diamond).
+            Type(ChartSeriesType.Line).Width(1.5).XName("XValue").YName("YValue").Add();
+            series.SegmentAxis(Segment.Y).Name("血糖計").LegendShape(LegendShape.Diamond).
+            Type(ChartSeriesType.Line).Width(1.5).XName("XValue").YName("YValue").Add();
+            series.SegmentAxis(Segment.Y).Name("運動器材").LegendShape(LegendShape.Diamond).
+            Type(ChartSeriesType.Line).Width(1.5).XName("XValue").YName("YValue").Add();
+
+        }).PrimaryXAxis(px =>
+            px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
+                .MajorGridLines(mg => mg.Width(0))
+                .IntervalType(IntervalType.Days)
+                .EdgeLabelPlacement(EdgeLabelPlacement.Shift)
+                .Interval(1)
+                .LabelFormat("yyyy-MM-dd")
+        ).PrimaryYAxis(py =>
+                py.Maximum(500).Minimum(0).LineStyle(ls => ls.Width(0))
+                .MajorTickLines(mt => mt.Width(1))
+                .MinorTickLines(mt => mt.Width(0))
+                .Interval(50)
+                .LabelFormat("{value}次").RangePadding(Syncfusion.EJ2.Charts.ChartRangePadding.None)
+        ).Title("設備傳輸 流量分析表"
+        ).ChartArea(area =>
+                area.Border(br => br.Color("transparent"))
+        ).Tooltip(tt =>
+                tt.Enable(true).Shared(true)).LegendSettings(lg => lg.Visible(true)
+        ).Annotations(an => {
+            an.Region(Syncfusion.EJ2.Charts.Regions.Series).X("90%").Y("12%").Content("").Add();
+        }).Load("load").Render()
+    </div>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        var trafficData, containerInstance, dateRangeInstance;
+        $(function () {
+            containerInstance = document.getElementById('container').ej2_instances[0];
+            dateRangeInstance = document.getElementById('dateRange').ej2_instances[0];
+            loadData(1);
+            loadData(2);
+            loadData(3);
+            loadData(4);
+        });
+
+        function loadData(placement) {
+            var startDate = dateRangeInstance.startDate, endDate = dateRangeInstance.endDate;
+            $.getJSON('/Content/Data/traffic_equipment.json', function (data) {
+                trafficData = data.filter(v => v.Placement === placement).map(function (v) {
+                    return { XValue: new Date(v.XValue), YValue: v.YValue, Placement: v.Placement }
+                }).filter(f => f.XValue.getTime() >= startDate.getTime() && f.XValue.getTime() < endDate.addDays(1).getTime());
+                containerInstance.series[placement - 1].dataSource = trafficData;
+            });
+        }
+    </script>
+}
+
+<script type="text/javascript">
+    function load() {
+
+    }
+    function changeDateRange() {
+        loadData(1);
+        loadData(2);
+        loadData(3);
+        loadData(4);
+    }
+</script>

@@ -1,0 +1,102 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Navigations
+@{
+    ViewBag.Title = "Index2";
+    Layout = "~/Views/Shared/_LayoutKinHealthDemo.cshtml";
+}
+
+<div class="control-section">
+    <div class="menu-control">
+        @Html.EJS().Menu("menu").Items(ViewBag.data).Fields(ViewBag.menuFields).Template("#menuTemplate").Render()
+    </div>
+</div>
+
+
+<!-- Template to render Menu -->
+<script id="menuTemplate" type="text/x-template">
+    ${if(category)}
+    ${category}
+    ${else if (value)}
+    <div style="width: 100%;display: flex;justify-content: space-between;">
+        ${if(url)}
+        <img class="e-avatar e-avatar-small" src="@Url.Content("~/Content/menu/images/${url}.png")" />
+        ${/if}
+        <span style="width:100%;">${value}</span>
+        ${if(count)}
+        <span class="e-badge e-badge-success">${count}</span>
+        ${/if}
+    </div>
+    ${else}
+    <div tabindex="0" class="e-card">
+        <div class="e-card-header">
+            <div class="e-card-header-caption">
+                <div class="e-card-header-title">About Us</div>
+            </div>
+        </div>
+        <div class="e-card-content">
+            ${about.value}
+        </div>
+        <div class="e-card-actions">
+            <button class="e-btn e-outline" style="pointer-events: auto;">
+                Read More
+            </button>
+        </div>
+    </div>
+    ${/if}
+</script>
+
+<style>
+
+    /** Avatar customization */
+    .e-menu-wrapper ul .e-menu-item .e-avatar {
+        background-color: inherit;
+        font-size: 8px;
+        margin-right: 8px;
+        align-self: center;
+        width: auto;
+        overflow: visible;
+    }
+
+    .e-bigger .e-menu-wrapper ul .e-menu-item .e-avatar {
+        font-size: 10px;
+    }
+
+    /** Badge customization */
+    .e-menu-wrapper ul .e-menu-item .e-badge {
+        margin-left: 10px;
+        align-self: center;
+        overflow: visible;
+    }
+
+    /** Card customization */
+    .e-menu-wrapper ul.e-ul .e-menu-item .e-card {
+        width: 290px;
+        font-size: inherit;
+        background-color: inherit;
+        border-color: transparent;
+    }
+
+    .e-bigger .e-menu-wrapper ul.e-ul .e-menu-item .e-card {
+        width: 320px;
+    }
+
+    .e-menu-wrapper ul.e-ul .e-menu-item .e-card .e-card-content {
+        white-space: normal;
+        color: inherit;
+        padding-top: 0;
+        text-align: justify;
+        font-size: inherit;
+    }
+
+    .e-menu-wrapper ul.e-ul .e-menu-item#about {
+        height: auto;
+        padding: 0;
+    }
+
+        .e-menu-wrapper ul.e-ul .e-menu-item#about.e-focused {
+            background-color: transparent;
+            outline-color: transparent;
+            pointer-events: none;
+        }
+</style>
+

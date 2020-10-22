@@ -1,0 +1,145 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Navigations
+@{
+    ViewBag.Title = "UserControls";
+    Layout = "~/Views/Shared/_LayoutChildPage.cshtml";
+}
+
+@{
+    var listTemplate = "<div class='' role='presentation'><span class='${icon}'/><span class='ki-list-text'>${text}</span></div>";
+}
+
+@Html.EJS().Accordion("controls").Items(new List<AccordionAccordionItem> {
+        new  AccordionAccordionItem{ Header="輸入", Content="#inputList"},
+        new  AccordionAccordionItem{ Header="日期/時間", Content="#datetimeList"},
+        new  AccordionAccordionItem{ Header="按鈕", Content="#buttonList"},
+        new  AccordionAccordionItem{ Header="下拉選單", Content="#dropdownList"},
+}).Render()
+
+
+
+@Html.EJS().ListView("inputList").HtmlAttributes(new Dictionary<string, object>() { { "style", "display:none" } }).DataSource(new List<object> {
+    new {text="文字方塊", id="e-textbox", icon="sb-icons sb-icon-textbox"},
+    new {text="數值方塊", id="e-numerictextbox", icon="sb-icons sb-icon-numerictextbox"},
+    new {text="單選按鈕", id="e-radiobutton", icon="sb-icons sb-icon-radiobutton"},
+    new {text="檢核按鈕", id="e-checkbox", icon="sb-icons sb-icon-checkbox"},
+    new {text="調色盤", id="e-checkbox", icon="sb-icons sb-icon-colorpicker"},
+    new {text="上傳按鈕", id="e-uploader", icon="sb-icons sb-icon-uploader"},
+    new {text="範圍選擇", id="e-slider", icon="sb-icons sb-icon-slider"},
+    new {text="開關按鈕", id="e-radiobutton", icon="sb-icons sb-icon-switch"},
+}).Template(listTemplate).Render()
+
+@Html.EJS().ListView("datetimeList").HtmlAttributes(new Dictionary<string, object>() { { "style", "display:none" } }).DataSource(new List<object> {
+    new {text="日期選擇", id="e-datepicker", icon="sb-icons sb-icon-datepicker"},
+    new {text="日期範圍", id="e-daterangepicker", icon="sb-icons sb-icon-daterangepicker"},
+    new {text="日期時間", id="e-datetimepicker", icon="sb-icons sb-icon-datetimepicker"},
+    new {text="時間選擇", id="e-timepicker", icon="sb-icons sb-icon-timepicker"},
+}).Template(listTemplate).Render()
+
+@Html.EJS().ListView("buttonList").HtmlAttributes(new Dictionary<string, object>() { { "style", "display:none" } }).DataSource(new List<object> {
+    new {text="一般按鈕", id="e-button", icon="sb-icons sb-icon-button"},
+}).Template(listTemplate).Render()
+
+@Html.EJS().ListView("dropdownList").HtmlAttributes(new Dictionary<string, object>() { { "style", "display:none" } }).DataSource(new List<object> {
+    new {text="自動完成", id="e-button", icon="sb-icons sb-icon-autocomplete"},
+    new {text="組合列表", id="e-button", icon="sb-icons sb-icon-combobox"},
+    new {text="下拉列表", id="e-button", icon="sb-icons sb-icon-dropdownlist"},
+    new {text="靜態列表", id="e-button", icon="sb-icons sb-icon-listbox"},
+}).Template(listTemplate).Render()
+
+@*<ul>
+        <li><span class="sb-icons sb-icon-grid" /><span>資料表格</span></li>
+        <li><span class="sb-icons sb-icon-calendar" /><span>日曆</span></li>
+        <li><span class="sb-icons sb-icon-datepicker" /><span>日期</span></li>
+    </ul>*@
+
+
+<style type="text/css">
+    @@font-face {
+        font-family: sbicons;
+        src: url(https://ej2.syncfusion.com/home/styles/fonts/icons.ttf?gcjn6a)
+    }
+
+    .sb-icons {
+        font-family: sbicons;
+        color: #777;
+        font-size: 18px;
+        padding-top: 5px;
+    }
+
+    .sb-icon-textbox:before {
+        content: '\e724';
+    }
+
+    .sb-icon-numerictextbox:before {
+        content: '\e70c';
+    }
+
+    .sb-icon-radiobutton:before {
+        content: '\e714';
+    }
+
+    .sb-icon-checkbox:before {
+        content: '\e736';
+    }
+
+    .sb-icon-colorpicker:before {
+        content: '\e719';
+    }
+
+    .sb-icon-uploader:before {
+        content: '\e700';
+    }
+
+    .sb-icon-slider:before {
+        content: '\e735';
+    }
+
+    .sb-icon-switch:before {
+        content: '\e709';
+    }
+
+    .sb-icon-datepicker:before {
+        content: '\e703';
+    }
+
+    .sb-icon-daterangepicker:before {
+        content: '\e72a';
+    }
+
+    .sb-icon-datetimepicker:before {
+        content: '\e73f';
+    }
+
+    .sb-icon-timepicker:before {
+        content: '\e70a';
+    }
+
+    .sb-icon-button:before {
+        content: '\e743';
+    }
+
+    .sb-icon-autocomplete:before {
+        content: '\e730';
+    }
+
+    .sb-icon-combobox:before {
+        content: '\e732';
+    }
+
+    .sb-icon-dropdownlist:before {
+        content: '\e725';
+    }
+
+    .sb-icon-listbox:before {
+        content: '\e723';
+    }
+
+    .ki-list-text {
+        padding-left: 10px;
+        padding-top: 0;
+        font-size: 14px;
+        cursor: pointer;
+    }
+</style>
+

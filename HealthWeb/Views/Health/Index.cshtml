@@ -1,0 +1,109 @@
+﻿@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2.Charts;
+@using Syncfusion.EJ2.Navigations;
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutKinHealthDemo.cshtml";
+}
+
+<div class="row row-cols-1g-1">
+    @Html.EJS().DashboardLayout("mainpageDeshboard").Columns(3).CellSpacing(new double[] { 5, 5 }).AllowDragging(false).Panels(panel =>
+    {
+       panel.Row(0).Col(0).SizeX(0.5).SizeY(0.5).Id("memberReport").Content("#memberReportHtml").Enabled(true).MaxSizeX(1).CssClass("background-one").Add();   //memberReport
+       panel.Row(1).Col(0).SizeX(0.5).SizeY(0.5).Id("memberMeasurement").Content("#memberMeasurementHtml").Enabled(true).MaxSizeX(1).CssClass("background-one").Add();   //memberReport
+
+    }).AllowDragging(false).AllowFloating(true).ShowGridLines(false).CellAspectRatio(1.4).Render()
+</div>
+
+<template id="memberReportHtml">
+    @Html.Partial("MemberReport")
+</template>
+
+<template id="memberMeasurementHtml">
+    @Html.Partial("MemberMeasurement")
+</template>
+
+
+@section scripts
+{
+    <script type="text/javascript">
+        var mainpageDeshboardInstance;
+        document.addEventListener('DOMContentLoaded', function () {
+            mainpageDeshboardInstance = document.getElementById('mainpageDeshboard').ej2_instances[0];
+            mainpageDeshboardInstance.refresh();
+            console.log(mainpageDeshboardInstance);
+            $('#mainpageDeshboard > .e-panel').not('.e-disabled').click(function (e) {
+                // click panel event
+                var panel = $(e.target).parents('.e-panel');
+                if (panel.length) {
+                    switch (panel[0].id) {
+                        case 'user-account':
+                            window.location.href = '/User/List';
+                            break;
+                        case 'hiusing-settings':
+                            break;
+                        case 'facility-settings':
+                            break;
+                        case 'user-billing':
+                            break;
+                        case 'user-announcement':
+                            break;
+                        case 'user-parking':
+                            break;
+                    }
+                }
+            });
+        });
+    </script>
+}
+
+<style type="text/css">
+    .e-panel .e-panel-content {
+        padding: 12px;
+        background-color: #ddd;
+        box-sizing: padding-box;
+        cursor: pointer;
+    }
+
+    .background-user-account {
+        background-color: #2684ff !important;
+    }
+
+    .background-user-billing {
+        background-color: #ff6a00 !important;
+    }
+
+    .background-housing {
+        background-color: #a40476 !important;
+    }
+
+    .background-facility {
+        background-color: #106540 !important;
+    }
+
+    .background-user-messages {
+        background-color: #4b856c !important;
+    }
+
+    .background-pink {
+        background-color: rgb(227, 101, 147) !important;
+        opacity: 1;
+    }
+
+    .background-one {
+        background-color: #bd1874 !important;
+        opacity: 1;
+    }
+
+    .background-blue {
+        background-color: rgb(53, 124, 210) !important;
+        opacity: 1;
+    }
+
+    .background-green {
+        background-color: rgb(0, 189, 174) !important;
+        opacity: 1;
+    }
+</style>

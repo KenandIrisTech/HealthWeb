@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "NativeMessage";
+    Layout = "~/Views/Shared/_LayoutChildPage.cshtml";
+}
+
+<script src="~/Scripts/instascan.min.js"></script>
+
+<div class="row">
+    <div class="col-12">
+        <button onclick="sendNativeMessage()">Send to Native Message</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <video width="320" height="240" id="preview"></video>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <span id="qrcode" style="color:red"></span>
+    </div>
+</div>
+
+@section scripts
+{
+<script type="text/javascript">
+
+    function sendNativeMessage() {
+        console.log('sneding...');
+
+        // The ID of the extension we want to talk to.
+        var editorExtensionId = "mofhjncmjbbdkgfoedacfipbfgbmjggg";
+
+        // Make a simple request:
+        chrome.runtime.sendMessage(editorExtensionId, { text: 'test' },
+            function (response) {
+                console.log(response);
+            });
+    }
+    var scanner;
+    $(function () {
+        let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+        scanner.addListener('scan', function (content, image) {
+            $('#qrcode').text(content);
+        });
+        Instascan.Camera.getCameras().then(function (cameras) {
+            if (cameras.length > 0) {
+                scanner.start(cameras[0]);
+
+            } else {
+                console.error('No cameras found.');
+            }
+        }).catch(function (e) {
+            console.error(e);
+        });
+    });
+
+</script>
+}
+
+@*instascan*@
+@*https://github.com/schmich/instascan*@
+@*https://ithelp.ithome.com.tw/articles/10206308*@

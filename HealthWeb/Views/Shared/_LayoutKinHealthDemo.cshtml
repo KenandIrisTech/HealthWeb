@@ -1,0 +1,299 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Navigations
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - ONE TAIWAN</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    @{
+        var menuItems = new List<object>()
+{
+            new {Category = "首頁", IconCss="demo-iocns-jpg-home", Items = new List<object>(){
+                    new { Category="最新重要訊息"},
+                    new { Category="最新活動"},
+            }},
+            new {Category = "老人資訊與建議", Items = new List<object>(){
+                  new { id="flatM1", SubItems=new List<object>(){
+                    new { Text="財務與法律資訊",
+                        MenuItems= new List<object>(){
+                            new { Text= "政策與資源" },
+                            new { Text= "老人福利和權利" },
+                            new { Text= "儲蓄與債務管理" },
+                            new { Text= "退休金及養老金管理" },
+                            new { Text= "收入和稅收" },
+                            new { Text= "臨終關懷與生前契約" },
+                            new { Text= "法律問題" },
+                        }},
+                    new { Text="健康與福祉",
+                        MenuItems= new List<object>(){
+                            new { Text= "政策與資源" },
+                            new { Text= "認識疾病與症狀" },
+                            new { Text= "健康飲食" },
+                            new { Text= "健康促進" },
+                            new { Text= "休閒與運動" },
+                            new { Text= "醫療就診" },
+                            new { Text= "失智與心理健康" },
+                            new { Text= "孤獨感" },
+                            new { Text= "家人與家庭關係" },
+                        }},
+                    new { Text="照顧與關懷支持",
+                        MenuItems= new List<object>(){
+                            new { Text= "政策與資源" },
+                            new { Text= "尋找和安排社會照顧" },
+                            new { Text= "長照資源" },
+                            new { Text= "居家安全與照顧" },
+                            new { Text= "社區照顧" },
+                            new { Text= "機構照顧" },
+                            new { Text= "輔具資源" },
+                            new { Text= "看護與護理" },
+                            new { Text= "高齡友善資訊" },
+                        }},
+                    new { Text="工作與學習",
+                        MenuItems= new List<object>(){
+                            new { Text= "政策與資源" },
+                            new { Text= "退休" },
+                            new { Text= "高齡就業" },
+                            new { Text= "學習與培訓" },
+                        }},
+                    new { Text="社會參與/人際關係",
+                        MenuItems= new List<object>(){
+                            new { Text= "政策與資源" },
+                            new { Text= "捐贈與幫助" },
+                            new { Text= "募捐" },
+                            new { Text= "義工/志工" },
+                            new { Text= "時間銀行" },
+                            new { Text= "社團與休閒" },
+                            new { Text= "人際關係與同伴" },
+                        }},
+                    new { Text="分享您的新聞、故事"},
+                    new { Text="三節及圓夢計畫"},
+                  } }
+                } },
+            new {Category = "線上報名" },
+            new {Category = "好用的資源", Items=new List<object>(){
+                    new { Category="友善連結"},
+                    new { Category="政府機關"},
+                    new { Category="知識寶庫"},
+                    new { Category="老人福利B"},
+                    new { Category="老人福利C"},
+                    new { Category="社區式照顧服務"},
+            }},
+            new {Category = "檔案與媒體中心" },
+            new {Category = "加入我們的行列" , Items=new List<object>(){
+                    new { Category="成為國民健康促進資料平台會員", Url="/Member"},
+                    new { Category="成為國民健康促進資料平台志工或夥伴"},
+            }},
+            new {Category = "線上諮詢與討論" , Items=new List<object>(){
+                    new { Category="討論區"},
+                    new { Category="問與答"},
+                    new { Category="政策/意見反應"},
+                    new { Category="線上諮詢"},
+                    new { Category="諮詢專線"},
+                    new { Category="專業諮詢"},
+                    new { Category="聯繫我們"},
+            }},
+            new {Category = "關於我們" , Items=new List<object>(){
+                    new { Category="緣起、宗旨、願景"},
+                    new { Category="未來工作計劃"},
+                    new { Category="國民健康促進資料平台軌跡"},
+                    new { Category="我們的夥伴"},
+            }},
+        };
+
+    }
+    <div class="container navi-content" style="height:170px;">
+        <div class="row row-cols-lg-1">
+            <div class="col-lg-5">
+                <img src="~/Content/Images/logo.png" style="height:100px;" />
+                <span class="e-control" style="font-size:30px; color:#95bb32; font-weight:bolder; ">國民健康促進管理平台</span>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-5" style="text-align:right">
+                <img src="~/Content/Images/HappyEating.png" style="height:100px;border-radius: 50%;display:inline-block;"  />
+            </div>
+            @*<div class="col-lg-5" style="padding-top:50px">
+            @Html.EJS().Menu("menuRight").CssClass("ki-right-menu").Items(m =>
+                {
+                    m.IconCss("ki-icons ki-icon-user-profile").Text("Ken Li").Items(i =>
+                    {
+                        i.IconCss("ki-icons ki-icon-dashboard").Text("個人健康儀表板").Url("/Member").Add();
+                        i.IconCss("ki-icons ki-icon-notification").Text("通知訊息").Add();
+                        i.IconCss("ki-icons ki-icon-user-profile").Text("會員資枓").Add();
+
+                    }).Add();
+
+                }).Orientation(Orientation.Horizontal).Render()
+        </div>*@
+        </div>
+        <div  style="background-color:#95bb32;width:100vw;height:50px;left:0px;text-align:center;vertical-align:central;position:absolute;">
+            <div class="row row-cols-lg-1" style="padding-top:3px;">
+                @Html.EJS().Menu("menuMain").Items(menuItems).Template("#menuTemplate").Fields(m =>
+               {
+                   m.Text(new string[] { "Category" }).Children(new string[] { "Items" });
+               }).Orientation(Orientation.Horizontal).CssClass("ki-main-menu").Render()
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <script id="menuTemplate" type="text/template">
+        ${if(Category)}
+            <div>
+                ${if(IconCss)}
+                    <span class="${IconCss}"></span>
+                ${/if}
+                ${if(Url)}
+                    <a class="e-menu-text e-menu-url" href="${Url}">${Category}</a>
+                ${else}
+                    ${Category}
+                ${/if}
+            </div>
+        ${else}
+        <div class="container">
+            <div class="row row-cols-lg-12">
+                ${for(item of SubItems)}
+                <div class="col-lg-1" style="width:auto">
+                    <ul>
+                        <li class="ki-menu-category">
+                            ${item.Text}
+                            ${if(item.MenuItems)}
+                            <ul>
+                                ${for(menuItem of item.MenuItems)}
+                                <li class="ki-menu-item">${menuItem.Text}</li>
+                                ${/for}
+                            </ul>
+                            ${/if}
+                        </li>
+                    </ul>
+                </div>
+                ${/for}
+            </div>
+        </div>
+        ${/if}
+    </script>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/syncfusion")
+
+    <script type="text/javascript">
+        loadCultureFiles('zh-Hant');
+        //loadCultureFiles('zh-tw');
+        //if ((aa === undefined) && (bb == undefined)){
+
+        //}
+        function menuLeft_select() {
+            sidebarMenuInstance.toggle();
+        }
+    </script>
+    @Html.EJS().ScriptManager()
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        var sidebarMenuInstance;
+
+        $(function () {
+            //sidebarMenuInstance = document.getElementById('sidebarMenu').ej2_instances[0];
+        });
+
+    </script>
+    <style type="text/css">
+        .ki-icons {
+        }
+
+        .ki-icon-menu:hover {
+            cursor: pointer;
+        }
+
+        .ki-sidebar-menu, .ki-sidebar-menu ul {
+            width: 100%;
+        }
+
+        .ki-right-menu {
+            float: right;
+        }
+
+        .ki-main-menu {
+            background-color: #95bb32 !important;
+        }
+
+        .demo-iocns-jpg-home::before {
+            background-image: url('/Content/Images/IconHomeB.png');
+            background-size: cover;
+            position:relative;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            content: "";
+            top: 0;
+            left:0;
+        }
+    </style>
+    <style type="text/css">
+        .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] {
+            height: auto;
+            padding: 0;
+            /*max-width: 100%;*/
+        }
+
+        .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] .container .col-lg-1{
+            /*border-left:solid 1px #ccc;*/
+        }
+
+        .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul li ul {
+            padding-left: 5px;
+        }
+
+        .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'].e-focused {
+            background-color: transparent;
+            outline-color: transparent;
+            pointer-events:  none;
+        }
+
+        .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li {
+            pointer-events: auto;
+            cursor:pointer;
+            font-size:1.1em;
+        }
+
+        .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li.ki-menu-category {
+            /*font-size:1.2em;*/
+            border: solid 1px transparent;
+            padding:5px;
+            color:#0827a2;
+        }
+
+        .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li.ki-menu-category:hover {
+            cursor: pointer;
+            background-color: #8da356;
+            border: solid 1px #a0a0a0;
+            border-radius: 5px;
+            font-weight: 800;
+        }
+
+        .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li.ki-menu-item {
+            padding:5px;
+            border-radius:5px;
+        }
+
+        .e-menu-wrapper ul.e-ul .e-menu-item[id^='flat'] ul > li.ki-menu-item:hover {
+            cursor: pointer;
+            background-color: #c9d9a0;
+        }
+
+        .e-menu-wrapper ul {
+            font-size: 20px !important;
+        }
+    </style>
+</body>
+</html>

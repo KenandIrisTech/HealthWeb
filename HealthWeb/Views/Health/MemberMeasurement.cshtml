@@ -1,0 +1,61 @@
+﻿
+
+<div class="panel panel-tooltip" style="">
+    <span class="panel-tooltiptext">溫度量測<br/>血壓量測</span>
+
+    <div class="panel-heading panel-item  panel-tooltip" style="border-bottom:2px solid #e6e9ed !important;height:20%;">
+        <div style="font-size:20px;font-weight:bolder;text-shadow:black 0.1em 0.1em 0.2em">生理量測資料</div>
+    </div>
+    <div class="panel-body panel-item  panel-tooltip" style="height:80%;text-align:center;">
+        <div class="e-icons ki-icons ki-icon-heartbeat" style="font-size:120px;height:100%"></div>
+    </div>
+</div>
+
+<style type="text/css">
+    .e-icons {
+        margin-top: 10px;
+    }
+
+    .panel {
+        background-color: inherit;
+        height: inherit;
+    }
+
+    .panel:hover .tooltip {
+        visibility: visible;
+    }
+
+    .panel-item {
+        color: white;
+    }
+    /*.panel-tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }*/
+
+    .panel-tooltip .panel-tooltiptext {
+        visibility: hidden;
+        /*width: 120px;*/
+        background-color: inherit;
+        opacity: 0.8;
+        color: black;
+        text-align: center;
+        border-radius: 6px;
+        border: 2px solid white;
+        font-size: 15px;
+        padding: 5px 8px 5px 8px;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        /*bottom: 75%;
+        left: 80%;*/
+        top: 5%;
+        right: 5%;
+        margin-left: -60px;
+    }
+
+    .panel-tooltip:hover .panel-tooltiptext {
+        visibility: visible;
+    }
+</style>

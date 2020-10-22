@@ -1,0 +1,114 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Charts
+@{
+    ViewBag.Title = "DCloudTraffic";
+    Layout = "~/Views/Shared/_LayoutKinHealthDcloudDemo.cshtml";
+}
+
+@{ 
+    var content = "<div style='width:80px; padding: 5px;'><table style='width: 100%'>" +
+    "<tr> <td><div style='width: 10px; height: 10px; background:red;border-radius: 15px;'></div>" +
+    "</td> <td style='padding-left: 5px;'>高</td></tr><tr><td>" +
+    "<div style='width: 10px; height: 10px; background:blue;;border-radius: 15px;'></div>" +
+    "</td><td style='padding-left: 5px;'>中等 </td></tr><tr><td>" +
+    "<div style='width: 10px; height: 10px; background:green;;border-radius: 15px;'></div>" +
+    "</td><td style='padding-left: 5px;'>低</td></tr></table></div>";
+}
+
+<div class="row">
+    <div class="col-lg-2" style="text-align:right">
+        @Html.Label("日期範圍")
+    </div>
+    <div class="col-lg-3">
+        @Html.EJS().DateRangePicker("dateRange").Placeholder("日期範圍"
+            ).StartDate("2020-8-1").EndDate("2020-8-7").Format("yyyy-MM-dd").Separator(" 到 "
+            ).StrictMode(true).Change("changeDateRange").Render()
+    </div>
+    <div class="col-lg-2" style="text-align:right">
+        @Html.Label("場域")
+    </div>
+    <div class="col-lg-3">
+        @Html.EJS().DropDownList("placement").DataSource(new List<object>() {
+            new { text="新莊-人人健康中心", value=1},
+            new { text="板橋-大大運動心", value=2},
+            new { text="新店-中央活動中心", value=3},
+            new { text="中和-和平健身中心", value=4},
+            new { text="淡水-區公所", value=5},
+        }).Value(1).Fields(f=> f.Value("value").Text("text")).Change("placementChanged").Render()
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        @Html.EJS().Chart("container").Series(series =>
+        {
+            series.SegmentAxis(Segment.Y).Name("傳輸量").
+            Type(ChartSeriesType.MultiColoredLine).Width(1.5).XName("XValue")
+            .Segments(seg =>
+            {
+                seg.Color("red").Value(300).Add();
+                seg.Color("blue").Value(150).Add();
+                seg.Color("green").Value(50).Add();
+            }).YName("YValue").Width(2).Add();  //.DataSource("trafficData")
+
+        }).PrimaryXAxis(px =>
+            px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
+                .MajorGridLines(mg => mg.Width(0))
+                .IntervalType(IntervalType.Hours)
+                //.EdgeLabelPlacement(EdgeLabelPlacement.Shift)
+                .Interval(48)
+                .LabelFormat("yyyy-MM-dd HH:mm")
+        ).PrimaryYAxis(py =>
+                py.Maximum(250).Minimum(0).LineStyle(ls => ls.Width(0))
+                .MajorTickLines(mt => mt.Width(1))
+                .MinorTickLines(mt => mt.Width(0))
+                .Interval(25)
+                .LabelFormat("{value}次").RangePadding(Syncfusion.EJ2.Charts.ChartRangePadding.None)
+        ).Title("DCloud 流量分析表"
+        ).ChartArea(area =>
+                area.Border(br => br.Color("transparent"))
+        ).Tooltip(tt =>
+                tt.Enable(true).Shared(true)).LegendSettings(lg => lg.Visible(true)
+        ).Annotations(an => {
+            an.Region(Syncfusion.EJ2.Charts.Regions.Series).X("90%").Y("12%").Content(content).Add();
+        }).Load("load").Render()
+    </div>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        var trafficData, containerInstance, dateRangeInstance, placementInstance;
+        $(function () {
+            containerInstance = document.getElementById('container').ej2_instances[0];
+            dateRangeInstance = document.getElementById('dateRange').ej2_instances[0];
+            placementInstance = document.getElementById('placement').ej2_instances[0];
+            loadData(1);
+        });
+
+        function loadData(placement) {
+            var startDate = dateRangeInstance.startDate, endDate = dateRangeInstance.endDate;
+            $.getJSON('/Content/Data/traffic_total.json', function (data) {
+                trafficData = data.filter(v => v.Placement === placement).map(function (v) {
+                    return { XValue: new Date(v.XValue), YValue: v.YValue, Placement: v.Placement }
+                }).filter(f => f.XValue.getTime() >= startDate.getTime() && f.XValue.getTime() < endDate.addDays(1).getTime());
+                containerInstance.series[0].dataSource = trafficData;
+            });
+        }
+
+
+    </script>
+}
+
+<script type="text/javascript">
+    function load() {
+
+    }
+
+    function changeDateRange() {
+        loadData(placementInstance.value);
+    }
+
+    function placementChanged(e) {
+        loadData(e.value);
+    }
+</script>

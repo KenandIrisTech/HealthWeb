@@ -1,0 +1,180 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.CircularGauge
+@using HealthWeb.Controllers;
+@{
+    ViewBag.Title = "EvalTarget";
+    if (ViewBag.PartialPage == null || !ViewBag.PartialPage)
+    {
+        Layout = "~/Views/Shared/_LayoutKinHealthMemberDemo.cshtml";
+    }
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="col-lg-4">
+            <div tabindex="0" class="e-card">
+                <div class="e-card-header ">
+                    <div class="e-card-header-caption" style="text-align:center;">
+                        <div class="e-card-title" style="font-size:25px">步行目標</div>
+                        <div class="e-card-sub-title">
+                            <span class="e-btn e-info" style="width:85px">目標</span>
+                            <span class="e-btn e-primary" style="width:85px">實際</span>
+
+                        </div>
+                        <div class="e-card-sub-title">
+                            <span class="e-btn e-outline e-info" style="width:85px">@($"{((TargetManagement)ViewBag.StepsTarget).Target:#,### 步}")</span>
+                            <span class="e-btn e-outline e-primary" style="width:85px">@($"{((TargetManagement)ViewBag.StepsTarget).Current:#,### 步}")</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="e-card-content">
+                    @Html.EJS().CircularGauge("chartSteps").Height("200px;").Loaded("loaded").Load("gaugeLoad").Title("走路步數追踪").TitleStyle(ts => ts.Size("18px")).Axes(axes => axes
+                        .Radius("100%").StartAngle(200).EndAngle(160).Minimum(0).Maximum(100).LabelStyle(ls => ls.Position(Position.Inside))
+                        .MajorTicks(major => major.Height(0)).MinorTicks(minor => minor.Height(0))
+                        .Pointers(pt => pt.Value(((TargetManagement)ViewBag.StepsTarget).Ratio).RoundedCornerRadius(20).Type(PointerType.RangeBar).Radius("90%").Color("#e5ce20").PointerWidth(20).Animation(animation => animation.Enable(false)).Border(border => border.Width(0)).Add())
+                        .LineStyle(lin => lin.Width(0))
+                        .Ranges(ranges => ranges.Start(0).End(100).Radius("90%").StartWidth("30").EndWidth("30").Color("#E0E0E0").RoundedCornerRadius(20).Add())
+                        .Add()).Render()
+                </div>
+                <div class="e-card-actions">
+                    <button class="e-btn e-outline e-primary">參考衛教</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div tabindex="0" class="e-card">
+                <div class="e-card-header ">
+                    <div class="e-card-header-caption" style="text-align:center;">
+                        <div class="e-card-title" style="font-size:25px">減重目標管理</div>
+                        <div class="e-card-sub-title">
+                            <span class="e-btn e-info" style="width:85px">目標</span>
+                            <span class="e-btn e-primary" style="width:85px">實際</span>
+                        </div>
+                        <div class="e-card-sub-title">
+                            <span class="e-btn e-outline e-info" style="width:85px">@($"{((TargetManagement)ViewBag.WeightsTarget).Target:#,### 公斤}")</span>
+                            <span class="e-btn e-outline e-primary" style="width:85px">@($"{((TargetManagement)ViewBag.WeightsTarget).Current:#,### 公斤}")</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="e-card-content">
+                    @Html.EJS().CircularGauge("chartLostWeight").Height("200px;").Loaded("loaded").Load("gaugeLoad").Title("體重變化追踪").TitleStyle(ts => ts.Size("18px")).Axes(axes => axes
+                        .Radius("100%").StartAngle(200).EndAngle(160).Minimum(0).Maximum(100).LabelStyle(ls => ls.Position(Position.Inside))
+                        .MajorTicks(major => major.Height(0)).MinorTicks(minor => minor.Height(0))
+                        .Pointers(pt => pt.Value(((TargetManagement)ViewBag.WeightsTarget).Ratio).RoundedCornerRadius(20).Type(PointerType.RangeBar).Radius("90%").Color("#e5ce20").PointerWidth(20).Animation(animation => animation.Enable(false)).Border(border => border.Width(0)).Add())
+                        .LineStyle(lin => lin.Width(0))
+                        .Ranges(ranges => ranges.Start(0).End(100).Radius("90%").StartWidth("30").EndWidth("30").Color("#E0E0E0").RoundedCornerRadius(20).Add())
+                        .Add()).Render()
+                </div>
+                <div class="e-card-actions">
+                    <button class="e-btn e-outline e-primary">參考衛教</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div tabindex="0" class="e-card">
+                <div class="e-card-header ">
+                    <div class="e-card-header-caption" style="text-align:center;">
+                        <div class="e-card-title" style="font-size:25px">睡眠目標管理</div>
+                        <div class="e-card-sub-title">
+                            <span class="e-btn e-info" style="width:85px">目標</span>
+                            <span class="e-btn e-primary" style="width:85px">實際</span>
+                        </div>
+                        <div class="e-card-sub-title">
+                            <span class="e-btn e-outline e-info" style="width:85px">@($"{((TargetManagement)ViewBag.SleepingTarget).Target:#,### 小時}")</span>
+                            <span class="e-btn e-outline e-primary" style="width:85px">@($"{((TargetManagement)ViewBag.SleepingTarget).Current:#,### 小時}")</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="e-card-content">
+                    @Html.EJS().CircularGauge("chartSleeping").Height("200px;").Loaded("loaded").Load("gaugeLoad").Title("睡眠時間追踪").TitleStyle(ts => ts.Size("18px")).Axes(axes => axes
+                        .Radius("100%").StartAngle(200).EndAngle(160).Minimum(0).Maximum(100).LabelStyle(ls => ls.Position(Position.Inside))
+                        .MajorTicks(major => major.Height(0)).MinorTicks(minor => minor.Height(0))
+                        .Pointers(pt => pt.Value(((TargetManagement)ViewBag.SleepingTarget).Ratio).RoundedCornerRadius(20).Type(PointerType.RangeBar).Radius("90%").Color("#e5ce20").PointerWidth(20).Animation(animation => animation.Enable(false)).Border(border => border.Width(0)).Add())
+                        .LineStyle(lin => lin.Width(0))
+                        .Ranges(ranges => ranges.Start(0).End(100).Radius("90%").StartWidth("30").EndWidth("30").Color("#E0E0E0").RoundedCornerRadius(20).Add())
+                        .Add()).Render()
+                </div>
+                <div class="e-card-actions">
+                    <button class="e-btn e-outline e-primary">參考衛教</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var circulargauge;
+    var sliderValue = 60;
+    function gaugeLoad(args) {
+        var arctheme = 'Material';
+        args.gauge.theme = (arctheme.charAt(0).toUpperCase() + arctheme.slice(1));
+        if (!circulargauge || true) {
+            var gaugeId = args.gauge.element.id;
+            circulargauge = args.gauge;
+            args.gauge.axes[0].minorTicks.height = 0;
+            args.gauge.axes[0].majorTicks.height = 0;
+            args.gauge.axes[0].labelStyle.font.size = "0px";
+            args.gauge.axes[0].annotations = [{
+                content: '<div id="pointervalue_' + gaugeId + '" style="font-size:25px;width:120px;text-align:center">' +
+                    circulargauge.axes[0].pointers[0].value.toString() + '%</div>',
+                angle: 0,
+                zIndex: '1',
+                radius: '0%'
+            },
+            {
+                content: '<div id="slider_' + gaugeId + '" style="height:70px;width:250px;"></div>',
+                angle: 0,
+                zIndex: '1',
+                radius: '-100%'
+            },
+            ];
+        }
+    }
+    function loaded(args) {
+        var annotation = document.getElementById(args.gauge.element.id + '_Annotations_0');
+        if (annotation) {
+            annotationRender('slider_' + args.gauge.element.id, args.gauge.axes[0].pointers[0].value);
+        }
+    }
+    function annotationRender(id, sliderValue) {
+        var first = new ej.inputs.Slider({
+            min: 0, max: 100,
+            type: 'MinRange',
+            limits: { enabled: true, minStart: 0, minEnd: 100 },
+            value: sliderValue,
+            change: function (args) {
+                var charId = this.element.id.substring(7);
+                circulargauge = document.getElementById(charId).ej2_instances[0];
+                sliderValue = args.value;
+                if (!isNaN(sliderValue)) {
+                    circulargauge.isProtectedOnChange = true;
+                    if (sliderValue >= 0 && sliderValue < 20) {
+                        circulargauge.axes[0].pointers[0].color = '#ea501a';
+                    }
+                    else if (sliderValue >= 20 && sliderValue < 40) {
+                        circulargauge.axes[0].pointers[0].color = '#f79c02';
+                    }
+                    else if (sliderValue >= 40 && sliderValue < 60) {
+                        circulargauge.axes[0].pointers[0].color = '#e5ce20';
+                    }
+                    else if (sliderValue >= 60 && sliderValue < 80) {
+                        circulargauge.axes[0].pointers[0].color = '#a1cb43';
+                    }
+                    else if (sliderValue >= 80 && sliderValue < 100) {
+                        circulargauge.axes[0].pointers[0].color = '#82b944';
+                    }
+                    circulargauge.setPointerValue(0, 0, sliderValue);
+                    if (document.getElementById('pointervalue')) {
+                        document.getElementById('pointervalue').innerHTML = circulargauge.axes[0].pointers[0].value.toString() + '/100';
+                    }
+                }
+            }
+        });
+        first.appendTo('#' + id);
+    }
+</script>
+
+

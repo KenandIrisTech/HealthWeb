@@ -1,0 +1,99 @@
+﻿@using Syncfusion.EJ2
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutChildPage.cshtml";
+}
+
+<div class="flex-container-vertical" style="max-width:400px; height:600px; justify-content:center;">
+    <div class="flex-container-vertical" style="">
+        <div class="flex-item" style="align-self:center;font-weight:bold; font-size:1.2em;"><label>歡迎使用</label></div>
+        <div class="flex-item" style="align-self:center"><label>台灣海洋網聯 客戶服務APP</label></div>
+        <div class="flex-item">
+            @Html.EJS().TextBox("email").Placeholder("電子郵件").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).Render()
+        </div>
+        <div class="flex-item">
+            @Html.EJS().TextBox("password").Placeholder("密碼").Type("password").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).Render()
+        </div>
+        <div class="flex-item" style="align-self:flex-end;">
+            <label>忘記密碼 ? </label>@Html.EJS().Button("forgot").Click("forgot").IsPrimary(true).Content("取回密碼").CssClass("e-outline e-small").Render()
+        </div>
+        <div class="flex-item flex-container-horizontal">
+            @Html.EJS().Button("login").Content("登入").CssClass("flext-item flex-item-fullrow e-primary").Render()
+        </div>
+        <div class="flex-item" style="align-self:center"><label>使用其它社群網站帳號登入</label></div>
+        <div class="flex-item">@Html.EJS().Button("facebook").Click("associate").Content("Facebook").IconCss("ki-icons ki-icon-facebook").CssClass("flex-item-fullrow facebook-style").Render()</div>
+        <div class="flex-item">@Html.EJS().Button("line").Click("associate").Content("Line").CssClass("flex-item-fullrow line-style").Render()</div>
+        <div class="flex-item" style="align-self:flex-end;">
+            <label>還沒有帳號 ? </label>@Html.EJS().Button("signup").Click("signup").IsPrimary(true).Content("按我註冊").CssClass("e-outline e-small").Render()
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        function forgot() {
+            window.location.href = '/Account/Forgot';
+        }
+        function signup() {
+            window.location.href = '/Account/SignUp';
+        }
+        function associate() {
+            //window.location.href = '/Account/Associate';
+            window.location.href = '/Account/ExternalLogin?provider=4';
+        }
+    </script>
+}
+
+<style type="text/css">
+
+    .flex-container-vertical {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .flex-container-horizontal {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .flex-item {
+        display: flex;
+        line-height: 36px;
+    }
+
+    .flex-item label {
+        color: #454545;
+    }
+
+    .flex-item-fullrow {
+        width: 100%;
+    }
+
+    .facebook-style {color: white;background-color: #3b5998;}
+    .line-style {color: white;background-color: #00c300;}
+
+    .flex-item button {
+        border-radius: 16px 16px;
+        margin: 6px 0;
+    }
+</style>
+
+
+@*
+    Flex 外容器屬性：
+        display
+        flex-flow
+        flex-direction
+        flex-wrap
+        justify-content
+        align-items
+
+    Flex 內元件屬性：
+        flex
+        flex-grow
+        flex-shrink
+        flex-basis
+        order
+        align-self
+*@

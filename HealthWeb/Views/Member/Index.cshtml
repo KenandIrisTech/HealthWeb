@@ -1,0 +1,152 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Navigations
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutKinHealthMemberDemo.cshtml";
+}
+
+
+
+<div class="">
+    @Html.EJS().DashboardLayout("mainDeshboard").Columns(4).CellSpacing(new double[] { 5, 5 }).AllowDragging(false).Panels(panel =>
+{
+    panel.Row(0).Col(0).SizeX(1).SizeY(1).Id("phr-demographics").Content("#phrDemographics").Enabled(true).Add();
+    panel.Row(0).Col(1).SizeX(1).SizeY(1).Id("phr-ediary").Content("#phrEDiary").Enabled(true).Add();
+    panel.Row(0).Col(2).SizeX(1).SizeY(1).Id("phr-medications").Content("#phrMedications").Enabled(true).Add();
+    panel.Row(0).Col(3).SizeX(1).SizeY(1).Id("phr-vitalsigns").Content("#phrVitalSigns").Enabled(true).Add();
+
+    panel.Row(1).Col(0).SizeX(1).SizeY(1).Id("phr-labexams").Content("#phrLabExams").Enabled(true).Add();
+    panel.Row(1).Col(1).SizeX(1).SizeY(1).Id("phr-appointments").Content("#phrAppointments").Enabled(true).Add();
+    panel.Row(1).Col(2).SizeX(1).SizeY(1).Id("phr-problems").Content("#phrProblems").Enabled(true).Add();
+    panel.Row(1).Col(3).SizeX(1).SizeY(1).Id("phr-allergies").Content("#phrAllergies").Enabled(true).Add();
+
+    panel.Row(2).Col(0).SizeX(1).SizeY(1).Id("phr-vaccinations").Content("#phrVaccinations").Enabled(true).Add();
+    panel.Row(2).Col(1).SizeX(1).SizeY(1).Id("phr-procedures").Content("#phrProcedures").Enabled(true).Add();
+    panel.Row(2).Col(2).SizeX(1).SizeY(1).Id("phr-qualityoflife").Content("#phrQualityOfLife").Enabled(true).Add();
+    panel.Row(2).Col(3).SizeX(1).SizeY(1).Id("phr-settings").Content("#phrSettings").Enabled(true).Add();
+}).AllowDragging(false).AllowFloating(true).ShowGridLines(false).CellAspectRatio(1.4).Render()
+</div>
+
+<template id="phrDemographics">
+    @Html.Partial("PhrDemographics")
+</template>
+
+<template id="phrEDiary">
+    @Html.Partial("PhrEDiary")
+</template>
+
+<template id="phrMedications">
+    @Html.Partial("PhrMedications")
+</template>
+
+<template id="phrVitalSigns">
+    @Html.Partial("PhrVitalSigns")
+</template>
+
+<template id="phrLabExams">
+    @Html.Partial("PhrLabExams")
+</template>
+<template id="phrAppointments">
+    @Html.Partial("PhrAppointments")
+</template>
+<template id="phrProblems">
+    @Html.Partial("PhrProblems")
+</template>
+<template id="phrAllergies">
+    @Html.Partial("PhrAllergies")
+</template>
+<template id="phrVaccinations">
+    @Html.Partial("PhrVaccinations")
+</template>
+<template id="phrProcedures">
+    @Html.Partial("PhrProcedures")
+</template>
+<template id="phrQualityOfLife">
+    @Html.Partial("PhrQualityOfLife")
+</template>
+<template id="phrSettings">
+    @Html.Partial("PhrSettings")
+</template>
+
+
+@section scripts 
+{
+    <script type="text/javascript">
+        var mainDashboardInstance;
+        $(function () {
+            mainDashboardInstance = document.getElementById('mainDeshboard').ej2_instances[0];
+            //mainpageDeshboardInstance.refresh();
+            //console.log(mainpageDeshboardInstance);
+            $('#mainDeshboard > .e-panel').not('.e-disabled').click(function (e) {
+                // click panel event
+                var panel = $(e.target).parents('.e-panel');
+                if (panel.length) {
+                    switch (panel[0].id) {
+                        case 'phr-vitalsigns':
+                            window.location.href = 'Member/VitalSigns';
+                            break;
+                    }
+                }
+            });
+
+        });
+    </script>
+}
+
+
+<style type="text/css">
+    .dashboardContainer{
+    }
+    .e-icons {
+        margin-top: 10px;
+    }
+
+    .panel {
+        background-color: inherit;
+        height: inherit;
+    }
+
+    .panel:hover .tooltip {
+        visibility: visible;
+    }
+
+    .panel-item {
+        color: white;
+    }
+
+    .pannel-caption {
+        font-size: 20px;
+        font-weight: bolder;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        background-color: #114914;
+        opacity:0.8;
+        padding:5px;
+        border-radius:10px;
+        display: inline-block;
+    }
+
+    .panel-tooltip .panel-tooltiptext {
+        visibility: hidden;
+        /*width: 120px;*/
+        background-color: #114914;
+        opacity: 0.6;
+        color: white;
+        text-align: center;
+        border-radius: 6px;
+        border: 2px solid white;
+        font-size: 15px;
+        padding: 5px 8px 5px 8px;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        /*bottom: 75%;
+        left: 80%;*/
+        top: 5%;
+        right: 5%;
+        margin-left: -60px;
+    }
+
+    .panel-tooltip:hover .panel-tooltiptext {
+        visibility: visible;
+    }
+</style>

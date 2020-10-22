@@ -1,0 +1,40 @@
+﻿@using Syncfusion.EJ2
+@{
+    ViewBag.Title = "HomePage";
+    Layout = "~/Views/Shared/_LayoutChildPage.cshtml";
+}
+
+@{ 
+    var itemTemplate = "<div><span class='ki-icons ${iconCss}'></span><a href='${url}'>${text}</a><span class='ki-icons ki-icon-next2' style='float:right'></span></div>";
+}
+
+<div class="frameParent" style="width:400px; height:500px">
+    <div class="frameCenter">
+        @*@Html.EJS().ListBox("menuList").SelectionSettings(_ =>*@
+        @Html.EJS().ListBox("menuList").CssClass("list-items").ItemTemplate(itemTemplate).SelectionSettings(_ =>
+            _.Mode(Syncfusion.EJ2.DropDowns.SelectionMode.Single)).Height("100%").Render()
+    </div>
+</div>
+
+
+@section scripts
+{
+    <script type="text/javascript">
+        var menuListInstance;
+
+        window.addEventListener('load', function () {
+            menuListInstance = document.getElementById('menuList').ej2_instances[0];
+            console.log(menuListInstance);
+            menuListInstance.dataSource = [
+                { text: '登入', iconCss: 'ki-icon-login', url:'/Account/Login' },
+                { text: '帳號', iconCss: 'ki-icon-housing' },
+            ];
+        });
+    </script>
+}
+<style type="text/css">
+    .framePage { display:flex; flex-flow:row;}
+    .frameCenter { display:flex; align-items:center; height:inherit; position:relative; top:100px;}
+    .list-items li { height:46px; line-height:46px; padding: 0 16px; position:relative;}
+    span.ki-icons { position:relative; top:10px; margin-left:10px; margin-right:10px; color:cadetblue;}
+</style>

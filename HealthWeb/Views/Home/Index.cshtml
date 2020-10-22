@@ -1,0 +1,331 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Navigations
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutKinHealthDemo.cshtml";
+}
+    <div class="ki-content">
+
+        @* <div  style="background-color:#95bb32;width:100vw;height:50px;left:0px;text-align:center;vertical-align:central;position:absolute;"> *@
+        <div class="row" style="height:calc( 100vh - 180px)">
+            <div style="height:inherit;width:100vw;position:absolute;left:0px;text-align:center;">
+                <img src="~/Content/Images/mainLanding.png" style="height:95%" />
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div tabindex="0" class="e-card">
+                    <div class="e-card-header ki-background-card0-1">
+                        <div class="e-card-header-caption ki-card-caption">
+                            <div class="e-card-title">照護資訊</div>
+                        </div>
+                    </div>
+                    <div class="e-card-content" style="text-align:center;">
+
+                        <img src="~/Content/Images/careInformation.jpg" style="height:350px" />
+                    </div>
+                    <div class="e-card-actions">
+                        <button class="e-btn e-outline e-primary">詳細內容</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div tabindex="0" class="e-card">
+                    <div class="e-card-header ki-background-card0-1">
+                        <div class="e-card-header-caption ki-card-caption">
+                            <div class="e-card-title">友善城市 - 八大面向</div>
+                        </div>
+                    </div>
+                    <div class="e-card-content" style="text-align:center;">
+
+                        <img src="~/Content/Images/8direction.jpg" style="height:350px" />
+                    </div>
+                    <div class="e-card-actions">
+                        <button class="e-btn e-outline e-primary">詳細內容</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div tabindex="0" class="e-card">
+                    <div class="e-card-header ki-background-card0-1">
+                        <div class="e-card-header-caption ki-card-caption">
+                            <div class="e-card-title">長照服務範圍</div>
+                        </div>
+                    </div>
+                    <div class="e-card-content">
+
+                        <img src="~/Content/Images/serviceType.png" style="height:170px" />
+                    </div>
+                    <div class="e-card-actions">
+                        <button class="e-btn e-outline e-primary">詳細內容</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div tabindex="0" class="e-card">
+                    <div class="e-card-header ki-background-card0-1">
+                        <div class="e-card-header-caption ki-card-caption">
+                            <div class="e-card-title">長照2.0懶人包</div>
+                        </div>
+                    </div>
+                    <div class="e-card-content">
+
+                        <img src="~/Content/Images/information.jpg"  style="height:175px" />
+                    </div>
+                    <div class="e-card-actions">
+                        <button class="e-btn e-outline e-primary">詳細內容</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div tabindex="0" class="e-card">
+                    <div class="e-card-header ki-background-card0-1">
+                        <div class="e-card-header-caption ki-card-caption">
+                            <div class="e-card-title">申訴管道</div>
+                        </div>
+                    </div>
+                    <div class="e-card-content">
+
+                        <img src="~/Content/Images/claimChannel.jpg"  style="height:175px" />
+                    </div>
+                    <div class="e-card-actions">
+                        <button class="e-btn e-outline e-primary">詳細內容</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        @*<div class="row">
+            <div class="col-lg-12">
+                <div tabindex="0" class="e-card">
+                    <div class="e-card-header ki-background-card0-1">
+                        <div class="e-card-header-caption ki-card-caption">
+                            <div class="e-card-title">我們的健康</div>
+                            <div class="e-card-sub-title">聽力篩檢要趁早 讓寶貝聽見幸福</div>
+                            <div class="e-card-sub-title">2020-04-10 13:09 李大華</div>
+                        </div>
+                    </div>
+                    <div class="e-card-content">
+                        根據統計，台灣新生兒先天性聽力損失發生率約每千人中3至4人為聽損兒，
+                        為讓兒童健康長大，國民健康署自101年起全面補助本國籍3個月內寶寶新生兒聽力篩檢，
+                        截至108年底共發現5,817個先天性聽損寶寶。透過新生兒聽力篩檢每年約發現7百至8百位聽損兒及早發現及早治療，
+                        以降低聽語發展障礙。
+                    </div>
+                    <div class="e-card-actions">
+                        <button class="e-btn e-outline e-primary">詳細內容</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div tabindex="0" class="e-card">
+                    <div class="e-card-header ki-background-card0-1">
+                        <div class="e-card-header-caption ki-card-caption">
+                            <div class="e-card-title">我們的健康</div>
+                            <div class="e-card-sub-title">聽力篩檢要趁早 讓寶貝聽見幸福</div>
+                        </div>
+                    </div>
+                    <div class="e-card-content">
+                        根據統計，台灣新生兒先天性聽力損失發生率約每千人中3至4人為聽損兒，
+                        為讓兒童健康長大，國民健康署自101年起全面補助本國籍3個月內寶寶新生兒聽力篩檢，
+                        截至108年底共發現5,817個先天性聽損寶寶。透過新生兒聽力篩檢每年約發現7百至8百位聽損兒及早發現及早治療，
+                        以降低聽語發展障礙。
+                    </div>
+                    <div class="e-card-actions">
+                        <button class="e-btn e-outline e-primary">詳細內容</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div tabindex="0" class="e-card">
+                    <div class="e-card-header ki-background-card0-1">
+                        <div class="e-card-header-caption ki-card-caption">
+                            <div class="e-card-title">我們的健康</div>
+                            <div class="e-card-sub-title">聽力篩檢要趁早 讓寶貝聽見幸福</div>
+                        </div>
+                    </div>
+                    <div class="e-card-content">
+                        根據統計，台灣新生兒先天性聽力損失發生率約每千人中3至4人為聽損兒，
+                        為讓兒童健康長大，國民健康署自101年起全面補助本國籍3個月內寶寶新生兒聽力篩檢，
+                        截至108年底共發現5,817個先天性聽損寶寶。透過新生兒聽力篩檢每年約發現7百至8百位聽損兒及早發現及早治療，
+                        以降低聽語發展障礙。
+                    </div>
+                    <div class="e-card-actions">
+                        <button class="e-btn e-outline e-primary">詳細內容</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div tabindex="0" class="e-card">
+                    <div class="e-card-header ki-background-card0-1">
+                        <div class="e-card-header-caption ki-card-caption">
+                            <div class="e-card-title">我們的健康</div>
+                            <div class="e-card-sub-title">聽力篩檢要趁早 讓寶貝聽見幸福</div>
+                        </div>
+                    </div>
+                    <div class="e-card-content">
+                        根據統計，台灣新生兒先天性聽力損失發生率約每千人中3至4人為聽損兒，
+                        為讓兒童健康長大，國民健康署自101年起全面補助本國籍3個月內寶寶新生兒聽力篩檢，
+                        截至108年底共發現5,817個先天性聽損寶寶。透過新生兒聽力篩檢每年約發現7百至8百位聽損兒及早發現及早治療，
+                        以降低聽語發展障礙。
+                    </div>
+                    <div class="e-card-actions">
+                        <button class="e-btn e-outline e-primary">詳細內容</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div tabindex="0" class="e-card">
+                    <div class="e-card-header ki-background-card0-1">
+                        <div class="e-card-header-caption ki-card-caption">
+                            <div class="e-card-title">我們的健康</div>
+                            <div class="e-card-sub-title">聽力篩檢要趁早 讓寶貝聽見幸福</div>
+                        </div>
+                    </div>
+                    <div class="e-card-content">
+                        根據統計，台灣新生兒先天性聽力損失發生率約每千人中3至4人為聽損兒，
+                        為讓兒童健康長大，國民健康署自101年起全面補助本國籍3個月內寶寶新生兒聽力篩檢，
+                        截至108年底共發現5,817個先天性聽損寶寶。透過新生兒聽力篩檢每年約發現7百至8百位聽損兒及早發現及早治療，
+                        以降低聽語發展障礙。
+                    </div>
+                    <div class="e-card-actions">
+                        <button class="e-btn e-outline e-primary">詳細內容</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div tabindex="0" class="e-card">
+                    <div class="e-card-header ki-background-card0-1">
+                        <div class="e-card-header-caption ki-card-caption">
+                            <div class="e-card-title">我們的健康</div>
+                            <div class="e-card-sub-title">聽力篩檢要趁早 讓寶貝聽見幸福</div>
+                        </div>
+                    </div>
+                    <div class="e-card-content">
+                        根據統計，台灣新生兒先天性聽力損失發生率約每千人中3至4人為聽損兒，
+                        為讓兒童健康長大，國民健康署自101年起全面補助本國籍3個月內寶寶新生兒聽力篩檢，
+                        截至108年底共發現5,817個先天性聽損寶寶。透過新生兒聽力篩檢每年約發現7百至8百位聽損兒及早發現及早治療，
+                        以降低聽語發展障礙。
+                    </div>
+                    <div class="e-card-actions">
+                        <button class="e-btn e-outline e-primary">詳細內容</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div tabindex="0" class="e-card">
+                    <div class="e-card-header ki-background-card0-1">
+                        <div class="e-card-header-caption ki-card-caption">
+                            <div class="e-card-title">我們的健康</div>
+                            <div class="e-card-sub-title">聽力篩檢要趁早 讓寶貝聽見幸福</div>
+                        </div>
+                    </div>
+                    <div class="e-card-content">
+                        根據統計，台灣新生兒先天性聽力損失發生率約每千人中3至4人為聽損兒，
+                        為讓兒童健康長大，國民健康署自101年起全面補助本國籍3個月內寶寶新生兒聽力篩檢，
+                        截至108年底共發現5,817個先天性聽損寶寶。透過新生兒聽力篩檢每年約發現7百至8百位聽損兒及早發現及早治療，
+                        以降低聽語發展障礙。
+                    </div>
+                    <div class="e-card-actions">
+                        <button class="e-btn e-outline e-primary">詳細內容</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div tabindex="0" class="e-card">
+                    <div class="e-card-header ki-background-card0-1">
+                        <div class="e-card-header-caption ki-card-caption">
+                            <div class="e-card-title">我們的健康</div>
+                            <div class="e-card-sub-title">聽力篩檢要趁早 讓寶貝聽見幸福</div>
+                        </div>
+                    </div>
+                    <div class="e-card-content">
+                        根據統計，台灣新生兒先天性聽力損失發生率約每千人中3至4人為聽損兒，
+                        為讓兒童健康長大，國民健康署自101年起全面補助本國籍3個月內寶寶新生兒聽力篩檢，
+                        截至108年底共發現5,817個先天性聽損寶寶。透過新生兒聽力篩檢每年約發現7百至8百位聽損兒及早發現及早治療，
+                        以降低聽語發展障礙。
+                    </div>
+                    <div class="e-card-actions">
+                        <button class="e-btn e-outline e-primary">詳細內容</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div tabindex="0" class="e-card">
+                    <div class="e-card-header ki-background-card0-1">
+                        <div class="e-card-header-caption ki-card-caption">
+                            <div class="e-card-title">我們的健康</div>
+                            <div class="e-card-sub-title">聽力篩檢要趁早 讓寶貝聽見幸福</div>
+                        </div>
+                    </div>
+                    <div class="e-card-content">
+                        根據統計，台灣新生兒先天性聽力損失發生率約每千人中3至4人為聽損兒，
+                        為讓兒童健康長大，國民健康署自101年起全面補助本國籍3個月內寶寶新生兒聽力篩檢，
+                        截至108年底共發現5,817個先天性聽損寶寶。透過新生兒聽力篩檢每年約發現7百至8百位聽損兒及早發現及早治療，
+                        以降低聽語發展障礙。
+                    </div>
+                    <div class="e-card-actions">
+                        <button class="e-btn e-outline e-primary">詳細內容</button>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+    </div>
+
+<style type="text/css">
+    .ki-content {
+        /*height:inherit;*/
+        height: calc( 100vh - 180px);
+    }
+    .ki-content div.row {
+        margin:20px;
+    }
+
+    .ki-background-card0-1 {
+        /*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQl2XoS95mIbXFtTVRnv4GxCKhw0MoQn9KD1A&usqp=CAU);*/
+        /*background: rgb(16,191,24);*/
+        background: linear-gradient(275deg, rgba(16,191,24,1) 0%, rgba(0,36,23,1) 100%, rgba(0,212,255,1) 100%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: inherit;
+        /*opacity: 0.9;*/
+        border-radius:10px 10px 0 0;
+        
+    }
+    .ki-background-card0-1:hover {
+        /*opacity: 0.9;*/
+    }
+    .e-card-header-caption.ki-card-caption {
+        padding:10px;
+    }
+    .e-card-header-caption.ki-card-caption > .e-card-title,
+    .e-card-header-caption.ki-card-caption > .e-card-sub-title {
+/*        padding: 10px;
+        background: #3a3a3a;
+        opacity: 0.8;
+        font-weight: 600;
+        display: inline-flex;*/
+        color: #fff;
+        font-size:20px;
+        font-weight:bold;
+    }
+</style>

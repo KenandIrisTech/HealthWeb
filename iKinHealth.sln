@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthWeb", "HealthWeb\HealthWeb.csproj", "{D23CD1F2-CFA5-44ED-AA58-21BB43C59DCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLib", "CommonLib\CommonLib.csproj", "{7E07E215-F435-4BD0-B6D8-9289CBFD214D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthLib", "HealthLib\HealthLib.csproj", "{CDA450DD-265A-4680-8CF8-CFE520FBDC84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D23CD1F2-CFA5-44ED-AA58-21BB43C59DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D23CD1F2-CFA5-44ED-AA58-21BB43C59DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D23CD1F2-CFA5-44ED-AA58-21BB43C59DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D23CD1F2-CFA5-44ED-AA58-21BB43C59DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E07E215-F435-4BD0-B6D8-9289CBFD214D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E07E215-F435-4BD0-B6D8-9289CBFD214D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E07E215-F435-4BD0-B6D8-9289CBFD214D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E07E215-F435-4BD0-B6D8-9289CBFD214D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDA450DD-265A-4680-8CF8-CFE520FBDC84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA450DD-265A-4680-8CF8-CFE520FBDC84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA450DD-265A-4680-8CF8-CFE520FBDC84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA450DD-265A-4680-8CF8-CFE520FBDC84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EBF358F-1AFE-469F-AC6C-38C7CD2358B1}
+	EndGlobalSection
+EndGlobal

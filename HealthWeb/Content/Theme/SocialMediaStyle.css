@@ -1,0 +1,30 @@
+﻿body {
+}
+
+@font-face {
+    font-family: "SocialIconFonts";
+    src: url(/Content/Fonts/IconsSocialMedia.ttf);
+}
+
+[class^="sf-icon-"], [class*=" sf-icon-"], social-icons {
+    font-family: SocialIconFonts !important;
+    speak: none;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.social-icon-google::before {
+    content: "\0075";
+    color: white !important;
+}
+
+.google-style {
+    color: white!important;
+    background-color: #4285F4!important;
+}

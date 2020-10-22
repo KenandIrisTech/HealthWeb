@@ -1,0 +1,377 @@
+﻿.e-control, .e-tab-text {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, 'Microsoft JhengHei', Calibri !important;
+}
+
+.ki-fieldset, .ki-fieldset2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, 'Microsoft JhengHei', Calibri !important;
+    padding: 4px;
+    font-size: 12px;
+}
+
+.ki-fieldset input.e-input {
+    line-height: unset !important;
+    min-height: unset !important;
+    padding: 2px 0 2px !important;
+}
+
+.ki-fieldset label {
+    display: inline-block;
+    font-size: 12px;
+    float: right;
+    padding-top: 8px;
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: "IconFonts";
+    src: url(/Content/Fonts/IconFonts.ttf);
+}
+
+.header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    height: 55px;
+    position: relative;
+}
+
+.menu {
+    display: inline-block;
+    position: absolute;
+    width: 60px;
+    height: 55px;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.searchContent {
+    display: inline-block;
+    position: absolute;
+    left: 60px;
+}
+
+.mainPageTitle {
+    font-size: 18px;
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.right-content {
+    float: right;
+    height: 55px;
+    width: 150px;
+}
+
+.user-information {
+    top: 15%;
+    font-size: 12px;
+    position: absolute;
+}
+
+.user-information span {
+    float: left;
+}
+
+.user-information .username {
+    font-size: 17px;
+    line-height: 17px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.e-avatar.ki-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+[class^="sf-icon-"], [class*=" sf-icon-"], .ki-icons {
+    font-family: IconFonts !important;
+    speak: none;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+span.e-icons {
+    line-height: 2;
+}
+
+.ki-icon-home::before {
+    content: "\e700";
+}
+
+.ki-icon-billing::before {
+    content: "\e702";
+}
+
+.ki-icon-message::before {
+    content: "\e704";
+}
+
+.ki-icon-settings::before {
+    content: "\e701";
+}
+
+.ki-icon-menu::before {
+    content: "\e705";
+}
+
+.ki-icon-user::before {
+    content: "\1000";
+    /*content: "\e706";*/
+}
+
+.ki-icon-back::before {
+    content: "\e707";
+}
+
+.ki-icon-housing::before {
+    content: "\e708";
+}
+
+.ki-icon-swimming-pool::before {
+    content: "\e709";
+}
+
+.ki-icon-package::before {
+    content: "\e70a";
+}
+
+.ki-icon-heartbeat::before {
+    content: "\e70b";
+}
+
+.ki-icon-book::before {
+    content: "\e70c";
+}
+
+.ki-icon-process::before {
+    content: "\e70d";
+}
+
+.ki-icon-data-find::before {
+    content: "\e70e";
+}
+
+.ki-icon-data-input::before {
+    content: "\e70f";
+}
+
+.ki-icon-data-output::before {
+    content: "\e710";
+}
+
+.ki-icon-login::before {
+    content: "\e711";
+}
+
+.ki-icon-lt::before {
+    content: "\e712";
+}
+
+.ki-icon-gt::before {
+    content: "\e713";
+}
+
+.ki-icon-next::before {
+    content: "\e714";
+}
+
+.ki-icon-next2::before {
+    content: "\e715";
+}
+
+.ki-icon-facebook::before {
+    content: "\e716";
+}
+
+.ki-icon-data-information::before {
+    content: "\e717";
+}
+
+.ki-icon-user-profile::before {
+    content: "\e718";
+}
+
+.ki-icon-container::before {
+    content: "\e719";
+}
+
+.ki-icon-warehouse::before {
+    content: "\e71a";
+}
+
+.ki-icon-location::before {
+    content: "\e71b";
+}
+
+.ki-icon-dollar-tag::before {
+    content: "\e71c";
+}
+
+.ki-icon-registration::before {
+    content: "\e71d";
+}
+
+.ki-icon-register::before {
+    content: "\e71e";
+}
+
+.ki-icon-registration-inquery::before {
+    content: "\e71f";
+}
+
+.ki-icon-data-synchornize::before {
+    content: "\e720";
+}
+
+.ki-icon-load-report::before {
+    content: "\e721";
+}
+.ki-icon-new-report::before {
+    content: "\e722";
+}
+.ki-icon-dashboard::before {
+    content: "\e721";
+}
+.ki-icon-notification::before {
+    content: "\e724";
+}
+.ki-icon-logout::before {
+    content: "\e725";
+}
+.ki-icon-login::before {
+    content: "\e726";
+}
+.ki-icon-google::before {
+    content: "\e727";
+    color: #DB4437;
+}
+
+.ki-icon-add::before {
+    content: "\e728";
+}
+.ki-icon-update::before {
+    content: "\e729";
+}
+.ki-icon-delete::before {
+    content: "\e72a";
+}
+
+.ki-icon-earth::before {
+    content: "\e72a";
+}
+
+/* Iris Added-------------------------------------------------------------------*/
+.ki-icon-announcement::before {
+    content: "\1002";
+}
+
+.ki-icon-car::before {
+    content: "\1003";
+}
+
+/* Iris Added-------------------------------------------------------------------*/
+
+
+/* ki-box style ----*/
+/* justify-content 主軸 如 flex-direction: column 主軸為 由上而下 */
+/* align-content 交錯軸 如 flex-direction: column 交錯軸為 由左而右 */
+.navi-content div[class^="col"] {
+    padding-top: 7px;
+}
+.ki-view-container {
+    height: calc( 100vh - 48px - 28px);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    line-height: 36px;
+    padding-top:5px;
+}
+
+.flex-container-vertical {
+    display: flex;
+    flex-flow: column;
+}
+
+.flex-container-horizontal {
+    display: flex;
+    flex-flow: row;
+}
+
+.flex-item {
+    display: flex;
+    margin: 2px;
+    line-height: 36px;
+    padding: 2px;
+}
+
+.flex-box {
+    border: 1px solid transparent;
+    max-width: 500px;
+    padding: 15px;
+}
+
+.flex-item span.e-control {
+    font-size:14px;
+    padding:2px;
+}
+.flex-item-header {
+    background-color: #fafafa;
+    color: #808080;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+    margin: 0;
+    width: 100%;
+}
+
+.flex-item-caption {
+    font-size: 18px;
+    color: #185ac3;
+    font-weight: 900;
+}
+
+.flex-item-footer {
+    height: 20px;
+    background-color: #fafafa;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+}
+
+.flex-item-center {
+    align-self: center;
+}
+
+.flex-item-end {
+    align-self: flex-end;
+}
+
+.flex-item-fullrow {
+    width: 100%;
+}
+
+.ki-box {
+    border: 1px solid #dadada;
+    padding: 0 15px;
+}
+
+.ki-view-full-height {
+    height: inherit;
+}
+
+.ki-view-container .ki-box div[class^="col"] {
+    margin-bottom: 5px;
+}
+
+/* ------------------------------- */

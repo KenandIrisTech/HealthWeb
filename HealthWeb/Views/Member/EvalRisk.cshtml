@@ -1,0 +1,177 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Charts
+@using Syncfusion.EJ2.LinearGauge
+@{
+    ViewBag.Title = "EvalRisk";
+    if (ViewBag.PartialPage == null || !ViewBag.PartialPage)
+    {
+        Layout = "~/Views/Shared/_LayoutKinHealthMemberDemo.cshtml";
+    }
+}
+
+@*// 腰圍 / BMI / 血糖 / 膽固醇 / 脂肪量 / 血氧*@
+
+
+
+<div class="row">
+    <div class="col-lg-2" style="display:inline-block; height:80px;padding-top:20px;text-align:right">
+        <span class="demo-icons demo-icon-blood"></span><span style="font-size:25px;">腰圍<br></span>
+        <span style="font-size:25px;font-weight:bold;">108</span>
+        <span style="font-size:20px;"> cm</span>
+
+    </div>
+    <div class="col-lg-10" style="text-align:left">
+        @Html.EJS().LinearGauge("alert1").Load("onGaugeLoad").Height("80px").Orientation(Orientation.Horizontal).Container(cntr =>
+        {
+            cntr.Width(30).Border(new LinearGaugeBorder { Width = 0 }).Offset(30).BackgroundColor("#ddd");
+        }).Axes(axis =>
+        {
+            axis.Line(new LinearGaugeLine { Offset = 20 }).Maximum(100).Ranges(range =>
+            {
+                range.Start(0.01).End(40).Color("green").StartWidth(10).EndWidth(10).Offset(10).Add();
+                range.Start(40.01).End(70).Color("yellow").StartWidth(10).EndWidth(10).Offset(10).Add();
+                range.Start(70.01).End(100).Color("red").StartWidth(10).EndWidth(10).Offset(10).Add();
+                range.Start(0.01).End(92).Color("red").StartWidth(20).EndWidth(20).Offset(-2).Add();
+            })
+            .Pointers(ptr =>
+            {
+                ptr.Value(92).Height(15).Placement(Placement.Near).Color("#757575").Offset(-8).MarkerType(MarkerType.Triangle).Add();
+            })
+            .MajorTicks(new LinearGaugeTick { Height = 0, Width = 1, Interval = 10 })
+            .MinorTicks(new LinearGaugeTick { Height = 0, Width = 0 })
+            .LabelStyle(new LinearGaugeLabel { Font = new LinearGaugeFont { Size = "10px;", Color = "white", Opacity = 0 } })
+            .Add();
+        }).Annotations(ano =>
+        {
+            ano.Content("<div style='width:100px'><p style=font-size:15px;color:#248622;>過低</p></div>").AxisValue(35).HorizontalAlignment(Placement.Center).ZIndex("1").X(0).Y(30).Add();
+            ano.Content("<div style='width:100px'><p style=font-size:15px;color:#ba9e2a;>適當</p></div>").AxisValue(65).HorizontalAlignment(Placement.Center).ZIndex("1").X(0).Y(30).Add();
+            ano.Content("<div style='width:100px'><p style=font-size:15px;color:#b42f2f;>過高</p></div>").AxisValue(95).HorizontalAlignment(Placement.Center).ZIndex("1").X(0).Y(30).Add();
+        }).Render()
+    </div>
+</div>
+
+
+<div class="row" @*style="border-bottom-style:dashed; border-bottom-color:gray; border-bottom-width:80%"*@>
+    <div class="col-lg-2" style="display:inline-block; height:80px;padding-top:20px;text-align:right">
+        <span class="demo-icons demo-icon-blood"></span><span style="font-size:25px;">BMI<br></span>
+        <span style="font-size:25px;font-weight:bold;">32</span>
+
+    </div>
+    <div class="col-lg-10" style="text-align:left">
+        @Html.EJS().LinearGauge("alertBMI").Load("onGaugeLoad").Height("80px").Orientation(Orientation.Horizontal).Container(cntr =>
+        {
+            cntr.Width(30).Border(new LinearGaugeBorder { Width = 0 }).Offset(30).BackgroundColor("#ddd");
+        }).Axes(axis =>
+        {
+            axis.Line(new LinearGaugeLine { Offset = 20 }).Maximum(100).Ranges(range =>
+            {
+                range.Start(0.01).End(40).Color("green").StartWidth(10).EndWidth(10).Offset(10).Add();
+                range.Start(40.01).End(70).Color("yellow").StartWidth(10).EndWidth(10).Offset(10).Add();
+                range.Start(70.01).End(100).Color("red").StartWidth(10).EndWidth(10).Offset(10).Add();
+                range.Start(0.01).End(76).Color("red").StartWidth(20).EndWidth(20).Offset(-2).Add();
+            })
+            .Pointers(ptr =>
+            {
+                ptr.Value(76).Height(15).Placement(Placement.Near).Color("#757575").Offset(-8).MarkerType(MarkerType.Triangle).Add();
+            })
+            .MajorTicks(new LinearGaugeTick { Height = 0, Width = 1, Interval = 10 })
+            .MinorTicks(new LinearGaugeTick { Height = 0, Width = 0 })
+            .LabelStyle(new LinearGaugeLabel { Font = new LinearGaugeFont { Size = "10px;", Color = "white", Opacity = 0 } })
+            .Add();
+        }).Annotations(ano =>
+        {
+            ano.Content("<div style='width:100px'><p style=font-size:15px;color:#248622;>過低</p></div>").AxisValue(35).HorizontalAlignment(Placement.Center).ZIndex("1").X(0).Y(30).Add();
+            ano.Content("<div style='width:100px'><p style=font-size:15px;color:#ba9e2a;>適當</p></div>").AxisValue(65).HorizontalAlignment(Placement.Center).ZIndex("1").X(0).Y(30).Add();
+            ano.Content("<div style='width:100px'><p style=font-size:15px;color:#b42f2f;>過高</p></div>").AxisValue(95).HorizontalAlignment(Placement.Center).ZIndex("1").X(0).Y(30).Add();
+        }).Render()
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-lg-2" style="display:inline-block; height:80px;padding-top:20px;text-align:right">
+        <span class="demo-icons demo-icon-blood"></span><span style="font-size:25px;">血糖<br></span>
+        <span style="font-size:25px;font-weight:bold;">49</span>
+        <span style="font-size:20px;"> mg/dL</span>
+
+    </div>
+    <div class="col-lg-10" style="text-align:left">
+        @Html.EJS().LinearGauge("alertBodySuger").Load("onGaugeLoad").Height("80px").Orientation(Orientation.Horizontal).Container(cntr =>
+        {
+            cntr.Width(30).Border(new LinearGaugeBorder { Width = 0 }).Offset(30).BackgroundColor("#ddd");
+        }).Axes(axis =>
+        {
+            axis.Line(new LinearGaugeLine { Offset = 20 }).Maximum(100).Ranges(range =>
+            {
+                range.Start(0.01).End(40).Color("green").StartWidth(10).EndWidth(10).Offset(10).Add();
+                range.Start(40.01).End(70).Color("yellow").StartWidth(10).EndWidth(10).Offset(10).Add();
+                range.Start(70.01).End(100).Color("red").StartWidth(10).EndWidth(10).Offset(10).Add();
+                range.Start(0.01).End(30).Color("green").StartWidth(20).EndWidth(20).Offset(-2).Add();
+            })
+            .Pointers(ptr =>
+            {
+                ptr.Value(30).Height(15).Placement(Placement.Near).Color("#757575").Offset(-8).MarkerType(MarkerType.Triangle).Add();
+            })
+            .MajorTicks(new LinearGaugeTick { Height = 0, Width = 1, Interval = 10 })
+            .MinorTicks(new LinearGaugeTick { Height = 0, Width = 0 })
+            .LabelStyle(new LinearGaugeLabel { Font = new LinearGaugeFont { Size = "10px;", Color = "white", Opacity = 0 } })
+            .Add();
+        }).Annotations(ano =>
+        {
+            ano.Content("<div style='width:100px'><p style=font-size:15px;color:#248622;>過低</p></div>").AxisValue(35).HorizontalAlignment(Placement.Center).ZIndex("1").X(0).Y(30).Add();
+            ano.Content("<div style='width:100px'><p style=font-size:15px;color:#ba9e2a;>適當</p></div>").AxisValue(65).HorizontalAlignment(Placement.Center).ZIndex("1").X(0).Y(30).Add();
+            ano.Content("<div style='width:100px'><p style=font-size:15px;color:#b42f2f;>過高</p></div>").AxisValue(95).HorizontalAlignment(Placement.Center).ZIndex("1").X(0).Y(30).Add();
+        }).Render()
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-lg-2" style="display:inline-block; height:80px;padding-top:20px;text-align:right">
+        <span class="demo-icons demo-icon-blood"></span><span style="font-size:25px;">血氧濃度<br></span>
+        <span style="font-size:25px;font-weight:bold;">97</span>
+        <span style="font-size:20px;"> %</span>
+
+    </div>
+    <div class="col-lg-10" style="text-align:left">
+        @Html.EJS().LinearGauge("alertSPO2").Load("onGaugeLoad").Height("80px").Orientation(Orientation.Horizontal).Container(cntr =>
+        {
+            cntr.Width(30).Border(new LinearGaugeBorder { Width = 0 }).Offset(30).BackgroundColor("#ddd");
+        }).Axes(axis =>
+        {
+            axis.Line(new LinearGaugeLine { Offset = 20 }).Maximum(100).Ranges(range =>
+            {
+                range.Start(0.01).End(40).Color("green").StartWidth(10).EndWidth(10).Offset(10).Add();
+                range.Start(40.01).End(70).Color("yellow").StartWidth(10).EndWidth(10).Offset(10).Add();
+                range.Start(70.01).End(100).Color("red").StartWidth(10).EndWidth(10).Offset(10).Add();
+                range.Start(0.01).End(60).Color("yellow").StartWidth(20).EndWidth(20).Offset(-2).Add();
+            })
+            .Pointers(ptr =>
+            {
+                ptr.Value(60).Height(15).Placement(Placement.Near).Color("#757575").Offset(-8).MarkerType(MarkerType.Triangle).Add();
+            })
+            .MajorTicks(new LinearGaugeTick { Height = 0, Width = 1, Interval = 10 })
+            .MinorTicks(new LinearGaugeTick { Height = 0, Width = 0 })
+            .LabelStyle(new LinearGaugeLabel { Font = new LinearGaugeFont { Size = "10px;", Color = "white", Opacity = 0 } })
+            .Add();
+        }).Annotations(ano =>
+        {
+            ano.Content("<div style='width:100px'><p style=font-size:15px;color:#248622;>過低</p></div>").AxisValue(35).HorizontalAlignment(Placement.Center).ZIndex("1").X(0).Y(30).Add();
+            ano.Content("<div style='width:100px'><p style=font-size:15px;color:#ba9e2a;>適當</p></div>").AxisValue(65).HorizontalAlignment(Placement.Center).ZIndex("1").X(0).Y(30).Add();
+            ano.Content("<div style='width:100px'><p style=font-size:15px;color:#b42f2f;>過高</p></div>").AxisValue(95).HorizontalAlignment(Placement.Center).ZIndex("1").X(0).Y(30).Add();
+        }).Render()
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    function onGaugeLoad(args) {
+        var selectedTheme = 'Material';
+        args.gauge.theme = (selectedTheme.charAt(0).toUpperCase() + selectedTheme.slice(1));
+        args.gauge.orientation = "Horizontal";
+    }
+</script>
+
+
